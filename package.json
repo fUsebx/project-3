@@ -19,6 +19,7 @@
     "body-parser": "^1.18.3",
     "concurrently": "^3.6.0",
     "express": "^4.16.3",
-    "list-scripts": "^0.0.4"
+    "list-scripts": "^0.0.4",
+    "nodemon": "^1.18.0"
   }
 }
