@@ -1,1 +1,3 @@
-//DB models here
+module.exports = {
+    Users: require('./Users')
+}
