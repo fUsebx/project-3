@@ -21,6 +21,7 @@
     "express": "^4.16.3",
     "list-scripts": "^0.0.4",
     "mongoose": "^5.2.2",
-    "nodemon": "^1.18.0"
+    "nodemon": "^1.18.0",
+    "npm": "^6.1.0"
   }
 }
