@@ -18,11 +18,6 @@ const userSchema = new Schema({
       "Password should be longer than 5 characters"
     ]
   },
-  email: {
-    type: String,
-    unique: true,
-    match: [/.+@.+\..+/, "Please enter a valid e-mail address"]
-  },
 
   userCreated: {
     type: Date,
