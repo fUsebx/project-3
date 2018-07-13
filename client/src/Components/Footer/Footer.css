@@ -12,13 +12,13 @@
     padding: 3px;
     background: #B8B8B8;
   }
-  
-  a {
+
+  .team-name {
       position: relative;
       float: right;
   }
 
-  p {
+  .footer-btn {
       position: relative;
       float: left;
   }
