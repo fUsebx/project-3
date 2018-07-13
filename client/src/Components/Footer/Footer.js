@@ -2,9 +2,12 @@ import React from "react";
 import "./Footer.css";
 
 const Footer = () => (
-  <div>
-
-  </div>
+  <footer className="footer">
+    <span>
+      <p>Merge Conflict 2018</p>
+      <a href="../../Pages/Contact.js">Contact</a>
+    </span>
+  </footer>
 );
 
 export default Footer;
