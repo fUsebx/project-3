@@ -44,7 +44,7 @@ class LoginForm extends React.Component {
   loadUsers = () => {
     API.getUsers()
       .then(res =>
-        this.setState({ username: res.data, password: ""})
+        this.setState({ username: "", password: ""})
       )
       .catch(err => console.log(err));
   };
