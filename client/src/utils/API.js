@@ -2,13 +2,12 @@ import axios from "axios";
 
 export default {
   getUsers: function() {
-    return axios.get("/API/database");
+    return axios.get("/api/users");
   },
   getUser: function(id) {
-    return axios.get("/API/database/" + id);
+    return axios.get("/api/users" + id);
   },
-  // Saves a book to the database
   saveUser: function(userData) {
-    return axios.post("/API/database", userData);
+    return axios.post("/api/users", userData);
   }
 };
