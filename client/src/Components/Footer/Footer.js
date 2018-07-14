@@ -1,7 +1,7 @@
 import React from "react";
 import "./Footer.css";
 
-const Footer = () => (
+export default () => (
   <footer className="footer">
     <span>
       <p className="team-name" href="https://github.com/fUsebx">Merge Conflict 2018</p>
@@ -10,4 +10,3 @@ const Footer = () => (
   </footer>
 );
 
-export default Footer;
