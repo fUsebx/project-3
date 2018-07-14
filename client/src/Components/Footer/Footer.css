@@ -15,10 +15,10 @@
 
   .team-name {
       position: relative;
-      float: right;
+      float: left;
   }
 
   .footer-btn {
       position: relative;
-      float: left;
+      float: right;
   }
