@@ -1,6 +1,6 @@
 const router = require("express").Router();
 const databaseRoutes = require("./database");
 
-router.use("/", databaseRoutes);
+router.use("/API", databaseRoutes);
 
 module.exports = router;
