@@ -14,16 +14,16 @@ export default () => (
       <a className="nav-link active" href="">
         Sign Out
       </a>
-      <a className="nav-link active" href="../../Pages/Dashboard">
+      <a className="nav-link active" href="/Dashboard">
         Dashboard
       </a>
-      <a className="nav-link active" href="../../Pages/Profile">
+      <a className="nav-link active" href="/Profile">
         Profile
       </a>
-      <a className="nav-link active" href="../../Pages/LoginForm">
+      <a className="nav-link active" href="/LoginForm">
         Sign In
       </a>
-      <a className="nav-link active" href="../../Pages/About">
+      <a className="nav-link active" href="/About">
         About
       </a>
     </div>

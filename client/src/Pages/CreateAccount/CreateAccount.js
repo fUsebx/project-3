@@ -51,7 +51,7 @@ class CreateAccount extends React.Component {
   render() {
     return (
       <div className="create-acct">
-        <form className="form-group"> 
+        <form className="form-group">
           <Input
             type="text"
             name="username"
