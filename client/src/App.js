@@ -19,15 +19,15 @@ const App = () => (
     <div>
       <NavBar />
       <Switch>
-        <Route exact path="/" component={LoginForm} />
+        <Route exact path="/" component={CreateAccount} />
         <Route exact path="/home" component={Home} />
-        {/* <Route exact path="./login" component={LoginForm} /> */}
-        <Route path="/profile_form" component={ProfileForm} />
-        <Route path="/dashboard" component={Dashboard} />
-        <Route path="/about" component={About} />
-        <Route path="/create_account" component={CreateAccount} />
-        <Route path="/profile" component={Profile} />
-        <Route path="/contact" component={Contact} />
+        <Route exact path="./login" component={LoginForm} />
+        <Route exact path="/profile_form" component={ProfileForm} />
+        <Route exact path="/dashboard" component={Dashboard} />
+        <Route exact path="/about" component={About} />
+        {/* <Route path="/create_account" component={CreateAccount} /> */}
+        <Route exact path="/profile" component={Profile} />
+        <Route exact path="/contact" component={Contact} />
       </Switch>
       <Footer />
     </div>
