@@ -1,24 +1,24 @@
 .footer {
-    min-height: 100px;
+    min-height: 50px;
+    min-width: 100%;
     background: #E5E5E5;
-    position: relative;
-  }
-  
-  .footer span {
-    position: absolute;
-    bottom: 0;
+    position: fixed;
     left: 0;
-    right: 0;
-    padding: 3px;
-    background: #B8B8B8;
+    bottom: 0;
   }
 
   .team-name {
+      color: rgb(12, 48, 12);
       position: relative;
       float: left;
+      margin-top: 15px;
+      margin-left: 20px;
   }
 
   .footer-btn {
+      color: rgb(12, 48, 12);
       position: relative;
       float: right;
+      margin-top: 15px;
+      margin-right: 20px;
   }

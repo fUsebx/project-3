@@ -66,11 +66,11 @@ class LoginForm extends React.Component {
             name="password"
             value={this.state.password}
             onChange={this.handleInputChange}
-            placeholder="password"
+            placeholder="Password"
             className="form-control"
           />
           <br />
-          <FormBtn onClick={this.handleFormSubmit}> SUBMIT USER </FormBtn>
+          <FormBtn onClick={this.handleFormSubmit}> Create Account </FormBtn>
              
         </form>
         </div>
