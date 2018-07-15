@@ -22,10 +22,10 @@ const App = () => (
         <Route exact path="/" component={LoginForm} />
         <Route exact path="/home" component={Home} />
         {/* <Route exact path="./login" component={LoginForm} /> */}
-        <Route path="/profile-form" component={ProfileForm} />
+        <Route path="/profile_form" component={ProfileForm} />
         <Route path="/dashboard" component={Dashboard} />
         <Route path="/about" component={About} />
-        <Route path="/create-account" component={CreateAccount} />
+        <Route path="/create_account" component={CreateAccount} />
         <Route path="/profile" component={Profile} />
         <Route path="/contact" component={Contact} />
       </Switch>
