@@ -30,6 +30,8 @@ module.exports = {
 
   create: function(req, res) {
     const user = {
+      firstName: req.body.firstName, 
+      email: req.body.email, 
       username: req.body.username,
       password: req.body.password,
       userCreated: req.body.userCreated

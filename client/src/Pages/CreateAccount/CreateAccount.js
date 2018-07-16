@@ -5,6 +5,8 @@ import { Input, FormBtn } from "../../Components/Form";
 
 class CreateAccount extends React.Component {
   state = {
+    firstName: "",
+    email: "",
     username: "",
     password: ""
   };
@@ -18,49 +20,60 @@ class CreateAccount extends React.Component {
     });
   };
 
-
   handleFormSubmit = event => {
     event.preventDefault();
-    if (!this.state.username || !this.state.password) {
-      alert("YOU MUST FILL OUT A USERNAME AND PASSWORD"); 
+    if (!this.state.username || !this.state.password || !this.state.firstName) {
+      alert("YOU MUST FILL OUT A USERNAME AND PASSWORD");
     } else if (this.state.password.length < 6) {
-      alert("PASSWORD MUST BE LONGER"); 
+      alert("PASSWORD MUST BE LONGER");
     } else {
       API.saveUser({
-        username: this.state.username, 
+        firstName: this.state.firstName,
+        email: this.state.email,
+        username: this.state.username,
         password: this.state.password
       })
-      .then(res => this.loadUsers())
-      .catch(err => console.log(err)); 
+        .then("Sucess")
+        .catch(err => console.log(err));
     }
 
     this.setState({
+      firstName: "",
+      email: "",
       username: "",
       password: ""
     });
-
-  }
-
-  loadUsers = () => {
-    API.getUsers()
-      .then(res =>
-        this.setState({ username: "", password: ""})
-      )
-      .catch(err => console.log(err));
   };
+
+
   render() {
     return (
       <div className="create-acct">
-        <form className="form-group"> 
+        <form className="form-group">
           <Input
             type="text"
+            name="firstName"
+            value={this.state.firstName}
+            onChange={this.handleInputChange}
+            placeholder="First Name"
+            className="form-control"
+          />
+          <Input
+            type="text"
+            name="email"
+            value={this.state.email}
+            onChange={this.handleInputChange}
+            placeholder="Email"
+            className="form-control"
+          />
+          <Input
+            type="text" 
             name="username"
             value={this.state.username}
             onChange={this.handleInputChange}
             placeholder="Username"
             className="form-control"
           />
-          <br />
           <Input
             type="password"
             name="password"
@@ -71,10 +84,8 @@ class CreateAccount extends React.Component {
           />
           <br />
           <FormBtn onClick={this.handleFormSubmit}> Create Account </FormBtn>
-             
         </form>
-        </div>
-
+      </div>
     );
   }
 }
