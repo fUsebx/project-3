@@ -12,13 +12,13 @@ class Profile extends React.Component {
   };
 
 
-  loadUser = () => {
-    API.getUsers(res)
-      .then(
-        console.log(res)
-      )
-      .catch(err => console.log(err));
-  };
+  // loadUser = () => {
+  //   API.getUsers(res)
+  //     .then(
+  //       console.log(res)
+  //     )
+  //     .catch(err => console.log(err));
+  // };
   render() {
     return (
       <div>
