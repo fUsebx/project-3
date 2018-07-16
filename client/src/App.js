@@ -10,7 +10,7 @@ import Home from "./Pages/Home";
 import LoginForm from "./Pages/LoginForm";
 import NavBar from "./Components/Navbar";
 import Profile from "./Pages/Profile";
-import ProfileForm from "./Pages/ProfileForm";
+
 
 import "./index.css";
 
@@ -22,7 +22,6 @@ const App = () => (
         <Route exact path="/" component={CreateAccount} />
         <Route exact path="/home" component={Home} />
         <Route exact path="./login" component={LoginForm} />
-        <Route exact path="/profile_form" component={ProfileForm} />
         <Route exact path="/dashboard" component={Dashboard} />
         <Route exact path="/about" component={About} />
         {/* <Route path="/create_account" component={CreateAccount} /> */}
