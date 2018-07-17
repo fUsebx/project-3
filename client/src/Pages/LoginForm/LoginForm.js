@@ -2,6 +2,7 @@ import React from "react";
 import "./LoginForm.css";
 import API from "../../utils/API";
 import { Input, FormBtn } from "../../Components/Form";
+import { Link } from "react-router-dom";
 
 class LoginForm extends React.Component {
   state = {
@@ -70,8 +71,11 @@ class LoginForm extends React.Component {
             className="form-control"
           />
           <br />
-          <FormBtn onClick={this.handleFormSubmit}> Create Account </FormBtn>
-             
+          <FormBtn onClick={this.handleFormSubmit}> Sign In </FormBtn>
+          <p>Don't have an account?</p>
+          <FormBtn className="btn-create-acct">
+        <Link to="/create_account">Create Account</Link>
+          </FormBtn>
         </form>
         </div>
 
