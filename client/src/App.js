@@ -19,7 +19,7 @@ const App = () => (
     <div>
       <NavBar />
       <Switch>
-        <Route exact path="/" component={CreateAccount} />
+        <Route exact path="/" component={Home} />
         <Route exact path="/home" component={Home} />
         <Route exact path="/login" component={LoginForm} />
         <Route exact path="/dashboard" component={Dashboard} />

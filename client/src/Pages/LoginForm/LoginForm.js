@@ -19,40 +19,36 @@ class LoginForm extends React.Component {
     });
   };
 
-
   handleFormSubmit = event => {
     event.preventDefault();
     if (!this.state.username || !this.state.password) {
-      alert("YOU MUST FILL OUT A USERNAME AND PASSWORD"); 
+      alert("YOU MUST FILL OUT A USERNAME AND PASSWORD");
     } else if (this.state.password.length < 6) {
-      alert("PASSWORD MUST BE LONGER"); 
+      alert("PASSWORD MUST BE LONGER");
     } else {
       API.saveUser({
-        username: this.state.username, 
+        username: this.state.username,
         password: this.state.password
       })
-      .then(res => this.loadUsers())
-      .catch(err => console.log(err)); 
+        .then(res => this.loadUsers())
+        .catch(err => console.log(err));
     }
 
     this.setState({
       username: "",
       password: ""
     });
-
-  }
+  };
 
   loadUsers = () => {
     API.getUsers()
-      .then(res =>
-        this.setState({ username: "", password: ""})
-      )
+      .then(res => this.setState({ username: "", password: "" }))
       .catch(err => console.log(err));
   };
   render() {
     return (
       <div className="Login">
-        <form className="form-group"> 
+        <form className="form-group">
           <Input
             type="text"
             name="username"
@@ -72,13 +68,13 @@ class LoginForm extends React.Component {
           />
           <br />
           <FormBtn onClick={this.handleFormSubmit}> Sign In </FormBtn>
+          <br />
           <p>Don't have an account?</p>
           <FormBtn className="btn-create-acct">
-        <Link to="/create_account">Create Account</Link>
+            <Link className="create-link" to="/create_account">Create Account</Link>
           </FormBtn>
         </form>
-        </div>
-
+      </div>
     );
   }
 }

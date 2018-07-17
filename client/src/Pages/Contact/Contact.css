@@ -1,4 +1,31 @@
-.test-contact {
+.contact-form {
+    top: 50%;
+    left: 50%;
+    padding: 60px 40px;
+}
+
+.btn-contact {
     color: white;
-    font-family: 'Lato', sans-serif;   
+    background-color: rgb(12, 48, 12);
+    border-color: white;
+}
+.btn-contact:hover {
+    background-color: #425C73;
+    color: white;
+}
+.btn-contact a {
+    color: white;
+}
+.btn-contact:focus {
+    color: rgb(12, 48, 12);
+    background-color: #748386;
+}
+.btn-contact:focus a {
+    color: rgb(12, 48, 12);
+    background-color: #748386;
+}
+.btn-contact a:hover {
+    background-color: #425C73;
+    color: white;
+    text-decoration: none;
 }

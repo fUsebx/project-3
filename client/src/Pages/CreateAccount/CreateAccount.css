@@ -1,14 +1,17 @@
 @media all and (min-width: 480px) {
+    /* .form {
+        border-color: red;
+    } */
     .create-acct {
-        background-color: #E0E0E0;
-        width: 200px;
-        padding: 60px 20px;
-        height: 100%;
-        position: absolute;
-        width: 300px;
-        height: 300px;
         top: 50%;
         left: 50%;
+        display: block;
+        position: absolute;
+        background-color: #E0E0E0;
+        padding: 60px 40px;
+        width: 300px;
+        min-height: 400px;
+
         margin: -100px 0 0 -150px;
       }
 

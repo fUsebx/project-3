@@ -1,19 +1,41 @@
 @media all and (min-width: 480px) {
-    .Login {
-        background-color: #E0E0E0;
-        width: 200px;
-        padding: 60px 20px;
-        height: 100%;
-        position: absolute;
-        width: 300px;
-        height: 300px;
-        top: 50%;
-        left: 50%;
-        margin: -100px 0 0 -150px;
-      }
+  .Login {
+    background-color: #e0e0e0;
+    width: 200px;
+    padding: 60px 20px;
+    height: 100%;
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    top: 50%;
+    left: 50%;
+    margin: -100px 0 0 -150px;
+  }
 
-    .Login form {
-        margin: 0 auto;
-        max-width: 320px;
-    }
+  .Login form {
+    margin: 0 auto;
+    max-width: 320px;
+  }
 }
+
+/* .btn-create-acct a:hover {
+        background-color: #425C73;
+        color: white;
+        text-decoration: none;
+    } */
+
+/* .create-link a {
+    text-decoration: none;
+c olor: white;
+} */
+
+/* .btn-create-acct a {
+    text-decoration: none;
+    color: white;
+} */
+
+/* #btn-create-acct a {
+    color: white;
+background-color: rgb(12, 48, 12);
+border-color: white;
+} */
