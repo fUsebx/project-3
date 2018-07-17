@@ -58,6 +58,7 @@ class CreateAccount extends React.Component {
             placeholder="First Name"
             className="form-control"
           />
+          <br />
           <Input
             type="text"
             name="email"
@@ -66,6 +67,7 @@ class CreateAccount extends React.Component {
             placeholder="Email"
             className="form-control"
           />
+          <br />
           <Input
             type="text" 
             name="username"
@@ -74,6 +76,7 @@ class CreateAccount extends React.Component {
             placeholder="Username"
             className="form-control"
           />
+          <br />
           <Input
             type="password"
             name="password"
@@ -83,7 +86,8 @@ class CreateAccount extends React.Component {
             className="form-control"
           />
           <br />
-          <FormBtn onClick={this.handleFormSubmit}> Create Account </FormBtn>
+          <br />
+          <FormBtn className="btn-create-acct" onClick={this.handleFormSubmit}> Create Account </FormBtn>
         </form>
       </div>
     );
