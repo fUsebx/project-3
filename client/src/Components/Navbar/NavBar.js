@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./NavBar.css";
 
 export default () => (
@@ -11,20 +12,23 @@ export default () => (
           alt="logo"
         />
       </a>
-      <a className="nav-link active" href="">
-        Sign Out
+      <a className="nav-link" active> 
+        <Link to="/">Sign Out</Link>
       </a>
-      <a className="nav-link active" href="/Dashboard">
-        Dashboard
+      <a className="nav-link" active> 
+        <Link to="/dashboard">Dashboard</Link>
       </a>
-      <a className="nav-link active" href="/Profile">
-        Profile
+      <a className="nav-link" active> 
+        <Link to="/profile">Profile</Link>
       </a>
-      <a className="nav-link active" href="/LoginForm">
-        Sign In
+      <a className="nav-link" active> 
+        <Link to="/create_account">Create Account</Link>
       </a>
-      <a className="nav-link active" href="/About">
-        About
+      <a className="nav-link" active> 
+        <Link to="/login">Sign In</Link>
+      </a>
+      <a className="nav-link" active> 
+        <Link to="/about">About</Link>
       </a>
     </div>
   </nav>
