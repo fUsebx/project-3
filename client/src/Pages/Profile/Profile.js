@@ -1,6 +1,11 @@
 import React from "react";
 import "./Profile.css";
+<<<<<<< HEAD
 // import API from "../../utils/API";
+=======
+//import API from "../../utils/API";
+
+>>>>>>> 9d96c364b95dd4e5074268afe128f323d8255514
 
 class Profile extends React.Component {
   state = {
