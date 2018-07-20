@@ -45,50 +45,63 @@ class CreateAccount extends React.Component {
     });
   };
 
-
   render() {
     return (
-      <div className="create-acct">
-        <form className="form-group">
-          <Input
-            type="text"
-            name="firstName"
-            value={this.state.firstName}
-            onChange={this.handleInputChange}
-            placeholder="First Name"
-            className="form-control"
-          />
-          <br />
-          <Input
-            type="text"
-            name="email"
-            value={this.state.email}
-            onChange={this.handleInputChange}
-            placeholder="Email"
-            className="form-control"
-          />
-          <br />
-          <Input
-            type="text" 
-            name="username"
-            value={this.state.username}
-            onChange={this.handleInputChange}
-            placeholder="Username"
-            className="form-control"
-          />
-          <br />
-          <Input
-            type="password"
-            name="password"
-            value={this.state.password}
-            onChange={this.handleInputChange}
-            placeholder="Password"
-            className="form-control"
-          />
-          <br />
-          <br />
-          <FormBtn className="btn-create-acct" onClick={this.handleFormSubmit}> Create Account </FormBtn>
-        </form>
+      <div className="container-fluid login-form">
+        <div className="row">
+          <div className="col-sm-4 col-centered">
+            <div className="create-acct">
+              <h4 className="create-h4">Create a new fUsebx account</h4>
+              <br />
+              <form className="form-group">
+                <Input
+                  type="text"
+                  name="firstName"
+                  value={this.state.firstName}
+                  onChange={this.handleInputChange}
+                  placeholder="First Name"
+                  className="form-control"
+                />
+                <br />
+                <Input
+                  type="text"
+                  name="email"
+                  value={this.state.email}
+                  onChange={this.handleInputChange}
+                  placeholder="Email"
+                  className="form-control"
+                />
+                <br />
+                <Input
+                  type="text"
+                  name="username"
+                  value={this.state.username}
+                  onChange={this.handleInputChange}
+                  placeholder="Username"
+                  className="form-control"
+                />
+                <br />
+                <Input
+                  type="password"
+                  name="password"
+                  value={this.state.password}
+                  onChange={this.handleInputChange}
+                  placeholder="Password"
+                  className="form-control"
+                />
+                <br />
+                <br />
+                <FormBtn
+                  className="btn-create-acct"
+                  onClick={this.handleFormSubmit}
+                >
+                  {" "}
+                  Create Account{" "}
+                </FormBtn>
+              </form>
+            </div>
+          </div>
+        </div>
       </div>
     );
   }

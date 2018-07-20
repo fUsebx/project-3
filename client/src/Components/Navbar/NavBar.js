@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import "./NavBar.css";
 
 export default () => (
-  <nav className="navbar navbar-expand-lg navbar-light bg-light">
+  <nav className="navbar navbar-expand-lg navbar-light">
 
   <a className="navbar-brand">
   <Link to="/home"><img className="img img-logo" src={require("./assets/logo.png")} alt="logo"/></Link></a>
@@ -12,13 +12,13 @@ export default () => (
     <span className="navbar-toggler-icon"></span>
   </button>
 
-  <div className="collapse navbar-collapse" id="navbarNav">
+  <div className="collapse navbar-collapse justify-content-end" id="navbarNav">
     <ul className="navbar-nav">
       
       <li className="nav-item">
       <Link className="btn-nav" to="/about">About</Link>
       </li>
-
+      
       <li className="nav-item">
       <Link className="btn-nav" to="/login">Sign In</Link>
       </li>
