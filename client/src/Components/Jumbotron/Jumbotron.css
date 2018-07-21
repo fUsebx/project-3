@@ -1,0 +1,7 @@
+.jumbotron-fluid {
+    background-image: url(../../assets//wiring.jpg);
+    background-size: 100%;
+    border-top-style: solid;
+    border-top-width: 10px;
+    border-top-color: #190a31;
+}

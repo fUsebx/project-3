@@ -10,7 +10,7 @@ export default () => (
         <div className="row">
             <div className="col-md-12">
                 <div className="well welcome-banner text-center">
-                   <WeatherAPI />
+                   {/* <WeatherAPI /> */}
                 </div>
             </div>
         </div>

@@ -1,4 +1,43 @@
-.test-profile {
+.profile-well {
+    border-style: double;
+    border-width: 10px;
+    border-color: #425C73;
+    padding-bottom: 0px;
+    background-color: #35706C;
+    min-width: 300px;
+}
+
+h1 {
+    color: #FAEBD8;
+    font-weight: 300;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.profile-centered {
+    margin: auto;
+    width: 16%;
+    padding: 10px;
+}
+
+.profile-image {
+    background-color: #748386;
     color: white;
-    font-family: 'Lato', sans-serif;   
+    margin: auto;
+    padding: 15px;
+}
+
+.profile-info {
+    border-style: dotted;
+    border-width: 5px;
+    border-color: #AFB2C4;
+    padding-bottom: 0px;
+    background-color: #425C73;
+    min-width: 250px;
+    margin: 50px;
+}
+
+p {
+    color: #FAEBD8;
+    padding-left: 15px;
 }

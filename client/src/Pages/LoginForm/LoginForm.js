@@ -45,7 +45,7 @@ class LoginForm extends React.Component {
       .then(res => this.setState({ username: "", password: "" }))
       .catch(err => console.log(err));
   };
-  render() {
+  render() { 
     return (
       <div className="container-fluid login-form">
         <div className="row">

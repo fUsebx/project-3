@@ -1,8 +1,10 @@
 .login-box {
     border-style: double;
     border-width: 10px;
-    border-color: #190a31;
+    border-color: #748386;
     padding: 10px;
+    background-color: #190a31;
+    min-width: 300px;
 }
 
 .login-h4 {
@@ -14,7 +16,6 @@
 .col-centered {
     float: none;
     margin: 0 auto;
-    padding-top: 75px;
     padding-bottom: 75px;
 }
 
