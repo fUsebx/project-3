@@ -1,5 +1,8 @@
 import React from "react";
 import "./DashboardLayout.css";
+import WeatherAPI from "../../Pages/WeatherAPI"
+import NewsAPI from "../../Pages/NewsAPI"
+
 
 
 export default () => (
@@ -14,7 +17,7 @@ export default () => (
         <div className="row">
             <div className="col-md-4">
                 <div className="well dash-div weather">
-                    <p>Weather API goes here</p>
+                    <NewsAPI />
                 </div>
             </div>
             <div className="col-md-8">

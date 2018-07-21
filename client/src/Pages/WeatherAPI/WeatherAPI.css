@@ -1,0 +1,20 @@
+.weather-div{
+    width: 280px; 
+    height: 250px;
+    background-color: grey; 
+}
+
+.search-bar{
+    color: black; 
+    width: 100%; 
+}
+
+.weather-form{
+    width: 100%; 
+    display: flex; 
+    direction: row; 
+}
+
+.search-button{
+    width: 100%; 
+}
