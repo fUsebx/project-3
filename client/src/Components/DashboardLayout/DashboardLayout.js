@@ -10,21 +10,26 @@ export default () => (
         <div className="row">
             <div className="col-md-12">
                 <div className="well welcome-banner text-center">
-                   {/* <WeatherAPI /> */}
+                 <h3>wyd?</h3>
                 </div>
             </div>
         </div>
         <div className="row">
             <div className="col-md-4">
                 <div className="well dash-div weather">
+                    <WeatherAPI />
+                </div>
+            </div>
+            <div className="col-md-4">
+                <div className="well dash-div news">
                     <NewsAPI />
                 </div>
             </div>
-            <div className="col-md-8">
+            <div className="col-md-4">
                 <div className="well dash-div stocks">
                     <p>Stock widget goes here</p>
                 </div>
-            </div>    
+            </div>
         </div>
         <div className="row">
             <div className="col-md-6">
