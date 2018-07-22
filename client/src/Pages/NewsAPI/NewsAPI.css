@@ -1,5 +1,13 @@
 .test {
-    width: 100px; 
-    height: 100px;
-    background-color: bisque; 
+    width: 100%; 
+    min-height: 240px;
+    /* height: 100%; */
+    background-color: #425C73;
 }
+
+.test p {
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+    color: #FAEBD8;
+}
+

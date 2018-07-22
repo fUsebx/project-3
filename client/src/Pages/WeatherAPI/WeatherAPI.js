@@ -63,7 +63,7 @@ class WeatherAPI extends React.Component {
         </form>
         <h3 className="city-chosen">{this.state.cityChosen}</h3>
         <br></br>
-        <h5 className="tempurature">{this.state.temp}</h5>
+        <h5 className="temperature">{this.state.temp}</h5>
         <br></br>
         <h6 className="description">{this.state.description}</h6>
       </div>

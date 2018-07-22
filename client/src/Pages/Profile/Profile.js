@@ -2,7 +2,6 @@ import React from "react";
 import "./Profile.css";
 //import API from "../../utils/API";
 
-
 class Profile extends React.Component {
   state = {
     firstName: "",
@@ -27,15 +26,17 @@ class Profile extends React.Component {
               <div className="profile-header">
                 <h1>Welcome, John Doe</h1>
               </div>
-              <div className="profile-centered">
+              <div className="centered">
                 <i className="fas fa-user fa-10x profile-image" />
               </div>
               <div className="well profile-info">
-              <br />
-              <p>First Name: </p>
-              <p>Last Name: </p>
-              <p>Username: </p>
-              <p>Email: </p>
+                <br />
+                <div className="profile-input">
+                  <p>First Name: </p>
+                  <p>Last Name: </p>
+                  <p>Username: </p>
+                  <p>Email: </p>
+                </div>
               </div>
             </div>
           </div>

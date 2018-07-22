@@ -1,12 +1,30 @@
 .weather-div{
-    width: 280px; 
-    height: 250px;
-    background-color: grey; 
+    width: 100%; 
+    height: 100%;
+    background-color:  #AFB2C4;
+    padding: 10px;
+    border-style: dotted;
+    border-color: #faebd8;
+    border-width: 5px; 
 }
 
 .search-bar{
     color: black; 
-    width: 100%; 
+    width: 100%;
+}
+
+input {
+    -webkit-appearance: textfield;
+    background-color: white;
+    -webkit-rtl-ordering: logical;
+    cursor: text;
+    padding: 1px;
+    border-width: 3px;
+    border-style: outset;
+    border-color: initial;
+    border-image: initial;
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
 }
 
 .weather-form{
@@ -16,5 +34,12 @@
 }
 
 .search-button{
-    width: 100%; 
+    width: 30%; 
+}
+
+.city-chosen, .temperature, .description {
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+    padding-left: 15px;
+    padding-top: 10px;
 }

@@ -4,7 +4,7 @@
     border-color: #748386;
     padding: 10px;
     background-color: #190a31;
-    min-width: 300px;
+    /* min-width: 300px; */
 }
 
 .login-h4 {
@@ -22,6 +22,7 @@
 #no-acct {
     font-weight: 300;
     color: #748386;
+    padding-left: 0;
 }
 
 /* @media all and (min-width: 480px) {
