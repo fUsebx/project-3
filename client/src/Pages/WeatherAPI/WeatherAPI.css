@@ -1,19 +1,24 @@
 .weather-div{
-    width: 100%; 
+    width: 100%;
     height: 100%;
-    background-color:  #AFB2C4;
+    background-color: #36515a;
+    border-radius: 15px;
     padding: 10px;
-    border-style: dotted;
-    border-color: #faebd8;
-    border-width: 5px; 
+    box-shadow: 4px 8px 12px #190a31;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
 }
 
 .search-bar{
     color: black; 
+    border-radius: 25px;
     width: 100%;
+    margin-right: 10px;
 }
 
-input {
+/*input {
     -webkit-appearance: textfield;
     background-color: white;
     -webkit-rtl-ordering: logical;
@@ -25,19 +30,20 @@ input {
     border-image: initial;
     font-family: "Lato", sans-serif;
     font-weight: 300;
-}
+}*/
 
 .weather-form{
-    width: 100%; 
-    display: flex; 
-    direction: row; 
+    padding: 10px;
+    width: 100%;
+    display: flex;
+    direction: row;
 }
 
 .search-button{
-    width: 30%; 
+    width: 30%;
 }
 
-.city-chosen, .temperature, .description {
+.city-chosen, .temperature, .description .cloud {
     font-family: "Lato", sans-serif;
     font-weight: 300;
     padding-left: 15px;

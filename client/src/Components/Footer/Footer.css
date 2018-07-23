@@ -2,6 +2,7 @@
   min-height: 50px;
   min-width: 100%;
   background: #AFB2C4;
+  opacity: .8;
   position: fixed;
   left: 0;
   bottom: 0;
@@ -13,12 +14,12 @@
 .team-name {
   position: relative;
   float: left;
-  margin-top: 15px;
+  margin-top: 10px;
   margin-left: 20px;
 }
 
 .team-name a {
-  color: white;
+  color: rgb(84, 39, 78);
   font-family: 'Lato', sans-serif;
   font-weight: 300;
 }
@@ -30,12 +31,12 @@
 .footer-btn {
   position: relative;
   float: right;
-  margin-top: 15px;
+  margin-top: 10px;
   margin-right: 20px;
 }
 
 .footer-btn a {
-  color: white;
+  color: #190a31;
   font-family: 'Lato', sans-serif;
   font-weight: 300;
 }
