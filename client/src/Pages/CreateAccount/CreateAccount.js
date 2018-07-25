@@ -47,9 +47,9 @@ class CreateAccount extends React.Component {
 
   render() {
     return (
-      <div className="container-fluid login-form">
+      <div className="container-fluid create-form">
         <div className="row">
-          <div className="col-sm-4 col-centered">
+          <div className="col-md col-centered">
             <div className="create-acct">
               <h4 className="create-h4">Create a new fUsebx account</h4>
               <br />

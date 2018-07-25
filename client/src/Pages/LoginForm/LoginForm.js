@@ -49,7 +49,7 @@ class LoginForm extends React.Component {
     return (
       <div className="container-fluid login-form">
         <div className="row">
-          <div className="col-sm-4 col-centered">
+          <div className="col-md col-centered">
           <div className="login-box">
             <form className="form-group">
             <h4 className="login-h4">Please log into your fUsebx account</h4>

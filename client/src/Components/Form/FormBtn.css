@@ -1,25 +1,29 @@
 .btn-formbtn {
     color: white;
-    background-color: rgb(12, 48, 12);
+    background-color: #190a31;
     border-color: white;
 }
+
 .btn-formbtn:hover {
     background-color: #425C73;
     color: white;
 }
+
 .btn-formbtn a {
     color: white;
 }
-.btn-formbtn:focus {
+
+.btn-formbtn a:hover {
+    background-color: #425C73;
+    color: white;
+    text-decoration: none;
+}
+
+/* .btn-formbtn:focus {
     color: rgb(12, 48, 12);
     background-color: #748386;
 }
 .btn-formbtn:focus a {
     color: rgb(12, 48, 12);
     background-color: #748386;
-}
-.btn-formbtn a:hover {
-    background-color: #425C73;
-    color: white;
-    text-decoration: none;
-}
+} */

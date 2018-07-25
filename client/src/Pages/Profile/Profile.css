@@ -1,10 +1,14 @@
-.profile-well {
+.profile-page {
+    max-width: 750px;
+}
+
+.profile-div {
     border-style: double;
     border-width: 10px;
     border-color: #425C73;
     padding-bottom: 0px;
     background-color: #35706C;
-    min-width: 300px;
+    max-width: 600px;
 }
 
 h1 {
@@ -14,7 +18,7 @@ h1 {
     padding-top: 10px;
 }
 
-.centered {
+.center-image {
     text-align: center;
 }
 

@@ -1,47 +1,55 @@
 import React from "react";
 import "./Contact.css";
+import { FormBtn } from "../../Components/Form";
 
 const Contact = () => (
-    <div class="container contact-form">
-	    <div class="row">
-        <div class="col-md-6 col-md-offset-3">
-          <div class="well well-sm">
-            <form class="form-horizontal" action="" method="post">
-              <fieldset>
-                <legend class="text-center">Contact us</legend>
-
-                <div class="form-group">
-                  <label class="col-md-3 control-label" for="name">Name</label>
-                    <div class="col-md-9">
-                      <input id="name" name="name" type="text" placeholder="Your name" class="form-control" />
-                    </div>
-                </div>
-
-              <div class="form-group">
-                <label class="col-md-3 control-label" for="email">Your E-mail</label>
-                  <div class="col-md-9">
-                    <input id="email" name="email" type="text" placeholder="Your email" class="form-control" />
-                  </div>
-              </div>
-
-              <div class="form-group">
-                <label class="col-md-3 control-label" for="message">Your message</label>
-                <div class="col-md-9">
-                  <textarea class="form-control" id="message" name="message" placeholder="Please enter your message here..." rows="5"></textarea>
-                </div>
-              </div>
-
-            <div class="form-group">
-              <div class="col-md-12 text-right">
-                <button type="submit" class="btn btn-lg btn-contact">Submit</button>
-              </div>
+  <div className="container-fluid contact-form">
+    <div className="row">
+      <div className="col-md col-centered">
+        <div>
+          <form className="contact-form-form">
+            <div className="form-group">
+            <h4 className="contact-h4 text-center">Send a message to the fUseBx team</h4>
+            <br />
+              <label className="contact-form-input" for="inputName"> Name </label>
+              <input
+                type="text"
+                className="form-control"
+                id="inputName"
+                placeholder="Jane Doe"
+              />
             </div>
-          </fieldset>
+            <div className="form-group">
+              <label className="contact-form-input" for="inputEmail">Email</label>
+              <input
+                type="email"
+                className="form-control"
+                id="inputEmail"
+                placeholder="jane@email.com"
+              />
+            </div>
+            <div className="form-group">
+              <label className="contact-form-input" for="inputSubject">Subject</label>
+              <input
+                type="text"
+                className="form-control"
+                id="inputSubject"
+                placeholder="example"
+              />
+            </div>
+            <div className="form-group">
+              <label className="contact-form-input" for="inputMessage">Message</label>
+              <textarea className="form-control" id="inputMessage" placeholder="enter your message..." rows="4" />
+            </div>
+
+            <FormBtn type="submit">
+              Submit
+            </FormBtn>
           </form>
         </div>
       </div>
-	</div>
-</div>
-  );
-  
-  export default Contact;
+    </div>
+  </div>
+);
+
+export default Contact;

@@ -19,14 +19,14 @@ class Profile extends React.Component {
   // };
   render() {
     return (
-      <div className="container-fluid">
+      <div className="container-fluid profile-page">
         <div className="row">
-          <div className="col-sm col-centered ">
-            <div className="well profile-well">
+          <div className="col-md col-centered ">
+            <div className="profile-div">
               <div className="profile-header">
                 <h1>Welcome, John Doe</h1>
               </div>
-              <div className="centered">
+              <div className="center-image">
                 <i className="fas fa-user fa-10x profile-image" />
               </div>
               <div className="well profile-info">
