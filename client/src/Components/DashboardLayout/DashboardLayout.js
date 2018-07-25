@@ -1,26 +1,35 @@
 import React from "react";
 import "./DashboardLayout.css";
+import WeatherAPI from "../../Pages/WeatherAPI"
+import NewsAPI from "../../Pages/NewsAPI"
+
+
 
 export default () => (
     <div className="container-fluid">
         <div className="row">
             <div className="col-md-12">
                 <div className="well welcome-banner text-center">
-                    <p>Welcome, John. Today is Monday, July 16, 2018 and the current time is 1:23 PM.</p>
+                 <h3>wyd?</h3>
                 </div>
             </div>
         </div>
         <div className="row">
             <div className="col-md-4">
                 <div className="well dash-div weather">
-                    <p>Weather API goes here</p>
+                    <WeatherAPI />
                 </div>
             </div>
-            <div className="col-md-8">
+            <div className="col-md-4">
+                <div className="well dash-div news">
+                    <NewsAPI />
+                </div>
+            </div>
+            <div className="col-md-4">
                 <div className="well dash-div stocks">
                     <p>Stock widget goes here</p>
                 </div>
-            </div>    
+            </div>
         </div>
         <div className="row">
             <div className="col-md-6">

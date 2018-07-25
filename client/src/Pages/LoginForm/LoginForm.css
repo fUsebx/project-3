@@ -1,4 +1,31 @@
-@media all and (min-width: 480px) {
+.login-box {
+    border-style: double;
+    border-width: 10px;
+    border-color: #748386;
+    padding: 10px;
+    background-color: #190a31;
+    /* min-width: 300px; */
+}
+
+.login-h4 {
+    color: #748386;
+    text-align: center;
+    padding-top: 5px;
+}
+
+.col-centered {
+    float: none;
+    margin: 0 auto;
+    padding-bottom: 75px;
+}
+
+#no-acct {
+    font-weight: 300;
+    color: #748386;
+    padding-left: 0;
+}
+
+/* @media all and (min-width: 480px) {
   .Login {
     background-color: #e0e0e0;
     width: 200px;
@@ -16,7 +43,7 @@
     margin: 0 auto;
     max-width: 320px;
   }
-}
+} */
 
 /* .btn-create-acct a:hover {
         background-color: #425C73;

@@ -1,92 +1,28 @@
-nav {
-    height: 100px;
-    background-color: white;
-}
-
 .navbar {
-    border: none;
+    background-color: white;
+    padding: none;
+    min-height: 100px;
 }
 
-.nav-container {
-    margin-left: 0;
-    margin-right: 0;
-    padding: 0;
-    height: 100px;
-    width: 100%;
-}
-
-.img {
-    left: 0;
-    top: 0;
+.img-logo {
     height: 100px;
 }
 
-.nav-link {
-    background-color: #748386;
-    border-width: 2px;
-    border-color: #425C73;
-    position: relative;
-    float: right;
-    margin-top: 40px;
-    margin-left: 3px;
-    margin-right: 3px;
-    padding: 15px;
-    border-radius: 50%;
-}
-
-.nav-link a {
-    color: white;
-    font-family: 'Lato', sans-serif;
+.btn-nav {
+    margin-left: 15px;
+    margin-right: 10px;
     font-weight: 300;
+    color: #35706C
 }
 
-.nav-link:hover {
-    background-color: rgb(12, 48, 12);
+.btn-nav:hover {
+    color: #190a31;
+    box-shadow: #35706C 0 5px 0;
 }
 
-.nav-link:hover a {
-    font-family: 'Lato', sans-serif;
-    font-weight: 400;
+.navbar-toggler {
+    background-color: #AFB2C4;
+    border-style: solid;
+    border-width: 3px;
+    margin-right: 15px;
 }
-
-/* .btn-nav a:hover {
-    background-color: #425C73;
-    color: white;
-    text-decoration: none;
-} */
-
-/* .nav-link a:hover {
-    color: red;
-    background-color: blue;
-    text-decoration: none;
-} */
-/* 
-.btn-nav a:hover {
-    text-decoration: none;
-} */
-
-/* .btn-formbtn {
-    color: white;
-    background-color: rgb(12, 48, 12);
-    border-color: white;
-}
-.btn-formbtn:hover {
-    background-color: #425C73;
-    color: white;
-}
-.btn-formbtn a {
-    color: white;
-}
-.btn-formbtn:focus {
-    color: rgb(12, 48, 12);
-    background-color: #748386;
-}
-.btn-formbtn:focus a {
-    color: rgb(12, 48, 12);
-    background-color: #748386;
-}
-.btn-formbtn a:hover {
-    background-color: #425C73;
-    color: white;
-    text-decoration: none;
-} */

@@ -1,7 +1,25 @@
-@media all and (min-width: 480px) {
-    /* .form {
-        border-color: red;
-    } */
+.create-acct {
+    border-style: double;
+    border-width: 10px;
+    border-color: #748386;
+    padding: 10px;
+    background-color: #190a31;
+    /* min-width: 300px; */
+}
+
+.create-h4 {
+    color: #748386;
+    text-align: center;
+    padding-top: 5px;
+}
+
+.col-centered {
+    float: none;
+    margin: 0 auto;
+    padding-bottom: 75px;
+}
+
+/* @media all and (min-width: 480px) {
     .create-acct {
         top: 50%;
         left: 50%;
@@ -19,4 +37,4 @@
         margin: 0 auto;
         max-width: 320px;
     }
-}
+} */

@@ -45,35 +45,46 @@ class LoginForm extends React.Component {
       .then(res => this.setState({ username: "", password: "" }))
       .catch(err => console.log(err));
   };
-  render() {
+  render() { 
     return (
-      <div className="Login">
-        <form className="form-group">
-          <Input
-            type="text"
-            name="username"
-            value={this.state.username}
-            onChange={this.handleInputChange}
-            placeholder="Username"
-            className="form-control"
-          />
-          <br />
-          <Input
-            type="password"
-            name="password"
-            value={this.state.password}
-            onChange={this.handleInputChange}
-            placeholder="Password"
-            className="form-control"
-          />
-          <br />
-          <FormBtn onClick={this.handleFormSubmit}> Sign In </FormBtn>
-          <br />
-          <p>Don't have an account?</p>
-          <FormBtn className="btn-create-acct">
-            <Link className="create-link" to="/create_account">Create Account</Link>
-          </FormBtn>
-        </form>
+      <div className="container-fluid login-form">
+        <div className="row">
+          <div className="col-sm-4 col-centered">
+          <div className="login-box">
+            <form className="form-group">
+            <h4 className="login-h4">Please log into your fUsebx account</h4>
+            <br />
+              <Input
+                type="text"
+                name="username"
+                value={this.state.username}
+                onChange={this.handleInputChange}
+                placeholder="Username"
+                className="form-control"
+              />
+              <br />
+              <Input
+                type="password"
+                name="password"
+                value={this.state.password}
+                onChange={this.handleInputChange}
+                placeholder="Password"
+                className="form-control"
+              />
+              <br />
+              <FormBtn onClick={this.handleFormSubmit}> Sign In </FormBtn>
+              <br />
+              <br />
+              <p id="no-acct">Don't have an account?</p>
+              <FormBtn className="btn-create-acct">
+                <Link className="create-link" to="/create_account">
+                  Create Account
+                </Link>
+              </FormBtn>
+            </form>
+            </div>
+          </div>
+        </div>
       </div>
     );
   }

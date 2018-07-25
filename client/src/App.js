@@ -7,6 +7,7 @@ import CreateAccount from "./Pages/CreateAccount";
 import Dashboard from "./Pages/Dashboard";
 import Footer from "./Components/Footer";
 import Home from "./Pages/Home";
+import Jumbotron from "./Components/Jumbotron";
 import LoginForm from "./Pages/LoginForm";
 import NavBar from "./Components/Navbar";
 import Profile from "./Pages/Profile";
@@ -18,6 +19,7 @@ const App = () => (
   <Router>
     <div>
       <NavBar />
+      <Jumbotron />
       <Switch>
         <Route exact path="/" component={Home} />
         <Route exact path="/home" component={Home} />
