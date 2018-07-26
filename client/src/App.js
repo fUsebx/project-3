@@ -2,7 +2,7 @@ import React from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 import About from "./Pages/About";
-import Contact from "./Pages/Contact";
+import ContactForm from "./Pages/ContactTest";
 import CreateAccount from "./Pages/CreateAccount";
 import Dashboard from "./Pages/Dashboard";
 import Footer from "./Components/Footer";
@@ -28,7 +28,7 @@ const App = () => (
         <Route exact path="/about" component={About} />
         <Route exact path="/create_account" component={CreateAccount} />
         <Route exact path="/profile" component={Profile} />
-        <Route exact path="/contact" component={Contact} />
+        <Route exact path="/contact" component={ContactForm} />
       </Switch>
       <Footer />
     </div>

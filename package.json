@@ -25,6 +25,7 @@
     "if-env": "^1.0.4",
     "list-scripts": "^0.0.4",
     "mongoose": "^5.2.2",
+    "nodemailer": "^4.6.7",
     "react-open-weather": "^0.4.0",
     "react-router-dom": "^4.3.1",
     "react-weather": "^0.1.3"
