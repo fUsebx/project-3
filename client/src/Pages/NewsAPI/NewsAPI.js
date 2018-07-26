@@ -1,32 +1,32 @@
-import React from "react";
-import axios from "axios";
-import "./NewsAPI.css"
+import React, { Component } from "react";
+import "./NewsAPI.css";
+import getNews from './getNews'
+ 
+class NewsAPI extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      allArticles: []
+    };
 
-class NewsAPI extends React.Component {
-
-
-  componentWillMount() {
-    axios
-      .get("https://api.nytimes.com/svc/search/v2/articlesearch.json", {
-        params: {
-          api_key: "fa3a438079fb45a58ec76fb1ba54b7e4", 
-          sort: "newest"
-        }
-      })
-
-      .then(response => {
-        const { data } = response;
-        console.log(data);
-        
-      });
+    this.setNewsState = this.setNewsState.bind(this); 
   }
+
+componentDidMount(){
+  this.setNewsState(); 
+}
+
+setNewsState(){
+  getNews()
+    .then(articles => this.setState({allArticles: articles}))
+    .catch(err => console.log(err))
+}
 
   render() {
     return (
-      <div className="test" >
-        <p>Hello</p>
-      </div>
+<div className="test-div"></div>
     );
   }
+
 }
-export default NewsAPI
+export default NewsAPI;
