@@ -1,6 +1,21 @@
 .test{
-    width: 300px; 
+    width: 600px; 
     height: 250px;
     background-color: orangered; 
+    display: flex; 
+    flex-direction: row; 
 
+}
+
+.reddit-title{
+    font-size: 12px; 
+}
+
+.reddit-url {
+    font-size: 10px; 
+}
+
+.reddit-thumbnail{
+    width: 50px; 
+    height: 50px;
 }
