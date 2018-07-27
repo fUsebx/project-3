@@ -1,9 +1,6 @@
-.welcome-banner {
-    background-color: #748386;
-    margin-bottom: 30px;
-}
-
 .dash-div {
-    background-color: #425C73;
+    background-color: #AFB2C4;
     margin: 15px;
+    padding: 30px;
+    border-radius: 15px;
 }

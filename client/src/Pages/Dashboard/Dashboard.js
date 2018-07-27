@@ -9,6 +9,7 @@ import ToDoList from '../ToDoList';
 const Dashboard = (props) => (
             <DashboardLayout>
                 <WeatherAPI />
+                <br />
                 <ToDoList />
                 {/* <RedditScrape /> */}
                 {/* <NewsAPI /> */}

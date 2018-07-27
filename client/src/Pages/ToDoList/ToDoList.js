@@ -49,12 +49,14 @@ class ToDoList extends Component {
     return (
       <div className="todoListMain">
         <Title> Todo List </Title>
+        <div>
         <form onSubmit={this.addItem}>
           <input ref={(a) => this._inputElement = a}
-            placeholder="enter to do task">
+            placeholder="Enter a task">
           </input>
-          <button type="submit">add</button>
+          <button className="search-button-todo" type="submit">Add to list</button>
         </form>
+        </div>
         <TodoItems entries={this.state.items} delete={this.deleteItem}/>
       </div>
     );

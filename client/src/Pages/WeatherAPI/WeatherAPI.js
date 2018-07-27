@@ -61,7 +61,7 @@ class WeatherAPI extends React.Component {
       <div className="weather-div">
         <form className="weather-form" onSubmit={this.handleSubmit}>
         <Input className="search-bar" value={this.state.city} name="city" type="text" onChange={this.handleChange} placeholder="  Search a city!" />
-        <Button className="search-button" type="submit" value="Submit">Submit</Button>
+        <Button className="search-button-weather" type="submit" value="Submit">Submit</Button>
         </form>
         <h4 className="city-chosen">{this.state.cityChosen}</h4>
         <br></br>

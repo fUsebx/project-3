@@ -2,7 +2,7 @@ import React from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 import About from "./Pages/About";
-import ContactForm from "./Pages/ContactTest";
+import ContactForm from "./Pages/Contact";
 import CreateAccount from "./Pages/CreateAccount";
 import Dashboard from "./Pages/Dashboard";
 import Footer from "./Components/Footer";
