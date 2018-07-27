@@ -23,13 +23,14 @@ class ContactForm extends Component {
     const name = document.getElementById("name").value;
     const email = document.getElementById("email").value;
     const message = document.getElementById("message").value;
+
     axios({
       method: "POST",
       url: "http://localhost:3000/send",
       data: {
         name: name,
         email: email,
-        messsage: message
+        message: message
       }
     }).then(response => {
       if (response.data.msg === "success") {
