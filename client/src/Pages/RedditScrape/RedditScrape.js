@@ -1,36 +1,47 @@
 import React from "react";
 import "./RedditScrape.css";
-import axios from 'axios'
-
+import axios from "axios";
 
 class RedditScrape extends React.Component {
   constructor() {
     super();
     this.state = {
-      title: [],
-      url: [],
-      thumnail: []
+
+      articles: []
     };
   }
 
   componentDidMount() {
     axios
-      .get("https://cors-anywhere.herokuapp.com/https://www.reddit.com/top/.json")
+      .get(
+        "https://cors-anywhere.herokuapp.com/https://www.reddit.com/top/.json"
+      )
 
       .then(response => {
-        const results  = response.data.data.children;
-        for (var i = 0; i < 10; i++){
-          
-          let title = results[i].data.title; 
-          let url = results[i].data.url; 
-          let thumnail = results[i].data.thumnail
-          this.setState(title, url, thumnail)
-        }
+        // This is the full array
+        // Each data object, is accessed by the data property on that object
+        const raw = response.data.data.children.slice(20);
+        this.setState({ articles: raw });
+
+
+        console.log("Reddit data:", raw);
       });
   }
 
   render() {
-    return <div className="test" />;
+    const { articles } = this.state;
+    return (
+      <div className="test">
+
+        {articles.map(article => (
+          <div>
+            <img className="reddit-thumbnail" src={article.data.thumbnail} alt="reddit pic here"/>
+            <h1 className="reddit-title">{article.data.title}</h1>{" "}
+            <h2 className="reddit-url">{article.data.url}</h2>
+          </div>
+        ))}
+      </div>
+    );
   }
 }
 export default RedditScrape;
