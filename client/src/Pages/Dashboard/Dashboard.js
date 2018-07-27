@@ -4,9 +4,9 @@ import DashboardLayout from "../../Components/DashboardLayout";
 import WeatherAPI from "../WeatherAPI";
 import RedditScrape from '../RedditScrape';
 import ToDoList from "../ToDoList";
-// import NewsAPI from '../NewsAPI';
+import NewsAPI from '../NewsAPI';
 
-const Dashboard = props => (
+const Dashboard = () => (
   <DashboardLayout>
     <div className="container-fluid">
       <div className="row">
@@ -26,7 +26,7 @@ const Dashboard = props => (
       <br />
       <div className="row">
       <div className="col-md-4">
-      {/* <NewsAPI /> */}
+      <NewsAPI />
       </div>
       </div>
     </div>

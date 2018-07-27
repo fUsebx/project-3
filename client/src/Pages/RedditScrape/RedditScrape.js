@@ -7,7 +7,7 @@ class RedditScrape extends React.Component {
     super();
     this.state = {
 
-      articles: []
+      articles: [] 
     };
   }
 

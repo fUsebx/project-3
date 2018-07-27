@@ -4,3 +4,19 @@
     background-color: bisque; 
     color: black; 
 }
+
+.news-title{
+    font-size: 10px; 
+    color: black; 
+
+}
+
+.news-source{
+    font-size: 8px; 
+    color: black; 
+}
+
+.news-img{
+    width: 30px; 
+    height: 40px;
+}
