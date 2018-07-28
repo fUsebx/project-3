@@ -19,7 +19,7 @@ class Vid extends React.Component {
                 <source src={this.state.videoURL} type="video/mov" />
                 Your browser does not support the video tag.
             </video> */}
-            <img className="img img-welcome" src={require("../../assets/welcome.png")} alt="welcome"/>
+            <img className="img img-welcome" src={require("../../assets/welcome_copy.png")} alt="welcome"/>
             <iframe margin="0" padding="0" background="transparent" id="background-video" src={this.state.videoURL} title="Home video" frameBorder="0"/>
           </div>
         )
