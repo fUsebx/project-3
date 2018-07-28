@@ -9,7 +9,7 @@ class ContactForm extends Component {
     this.state = {
       nameField: ""
     };
-    // Let's chat about binding
+
     this.handleInput = this.handleInput.bind(this);
   }
 
@@ -34,10 +34,10 @@ class ContactForm extends Component {
       }
     }).then(response => {
       if (response.data.msg === "success") {
-        alert("Message Sent.");
+        alert("Your message has been sent to the fUseBx team.");
         this.resetForm();
       } else if (response.data.msg === "fail") {
-        alert("Message failed to send.");
+        alert("Sorry, your message could not be sent.");
       }
     });
   }
@@ -47,7 +47,6 @@ class ContactForm extends Component {
   }
 
   render() {
-    // This is called deconstruction. This is ES6 JS, read about it.
     const { nameField } = this.state;
     return (
         <div className="container-fluid contact-form">

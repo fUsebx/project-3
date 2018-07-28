@@ -11,6 +11,12 @@
     -o-border-radius: 15px;
 }
 
+.weather-header {
+    color: #FAEBD8;
+    font-weight: 300;
+    font-size: 30px;
+}
+
 .search-bar{
     color: black; 
     border-radius: 25px;
@@ -56,10 +62,9 @@
     
 }
 
-
-/* , .description .cloud {
+.description .cloud {
     font-family: "Lato", sans-serif;
     font-weight: 100;
     padding-left: 15px;
     padding-top: 10px;
-} */
+}

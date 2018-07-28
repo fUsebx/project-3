@@ -11,6 +11,14 @@
     -o-border-radius: 15px;
 }
 
+.todo-desc {
+  font-weight: 100;
+  font-style: italic;
+  color: white;
+  font-size: 17px;
+  text-shadow: 2px 2px #190a31;
+}
+
 .search-button-todo {
   width: 20%;
   border-radius: 5px;

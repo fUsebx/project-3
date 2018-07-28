@@ -34,7 +34,6 @@ class Profile extends React.Component {
                 <br />
                 <div className="profile-input">
                   <p>First Name: </p>
-                  <p>Last Name: </p>
                   <p>Username: </p>
                   <p>Email: </p>
                 </div>
