@@ -15,7 +15,7 @@ class WeatherAPI extends React.Component {
       cityChosen: "",
       cloud: ""
     };
-
+    
     this.handleChange = this.handleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
     this.searchCityForWeather = this.searchCityForWeather.bind(this);
@@ -74,4 +74,5 @@ class WeatherAPI extends React.Component {
     );
   }
 }
+
 export default WeatherAPI;

@@ -1,0 +1,9 @@
+{"web":{
+    "client_id":"190600039301-kb0aqk8evb04lrmlgecg0qk90nr45pe4.apps.googleusercontent.com",
+        "project_id":"fusebox-210320","auth_uri":"https://accounts.google.com/o/oauth2/auth",
+        "token_uri":"https://accounts.google.com/o/oauth2/token",
+        "auth_provider_x509_cert_url":"https://www.googleapis.com/oauth2/v1/certs",
+        "client_secret":"UlgueK-4Gw4UnynD53c4I_22",
+        "redirect_uris":["https://github.com/fUsebx"],
+        "javascript_origins":["https://www.example.com"
+    ]}}
