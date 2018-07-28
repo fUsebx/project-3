@@ -23,7 +23,7 @@ class WeatherAPI extends React.Component {
 
   searchCityForWeather() {
     axios
-      .get("http://api.openweathermap.org/data/2.5/weather", {
+      .get("https://api.openweathermap.org/data/2.5/weather", {
         params: {
           q: `${this.state.city}`,
           APPID: "566e57c98908bd4ea7fa97148977fc32",
