@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import Title from '../../Components/Title';
 import TodoItems from '../ToDoItems'; 
 import './ToDoList.css'; 
+import { FormBtn } from "../../Components/Form";
 
 
 
@@ -49,12 +50,14 @@ class ToDoList extends Component {
     return (
       <div className="todoListMain">
         <Title> Todo List </Title>
-        <div>
-        <form onSubmit={this.addItem}>
+        <div className="todo-div">
+        <form className="todo-form" onSubmit={this.addItem}>
           <input ref={(a) => this._inputElement = a}
-            placeholder="Enter a task">
+            placeholder="   Enter a task">
           </input>
-          <button className="search-button-todo" type="submit">Add to list</button>
+          <FormBtn
+className="search-button-todo" type="submit">Add to list
+          </FormBtn>
         </form>
         </div>
         <TodoItems entries={this.state.items} delete={this.deleteItem}/>

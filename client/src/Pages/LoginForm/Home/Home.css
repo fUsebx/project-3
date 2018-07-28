@@ -14,11 +14,11 @@
     width: 100vw;
     padding: none;
     position: initial; /* optional */
-    opacity: .33;
+    opacity: .05;
 
 }
 
-.player .iframe .player-alert .close, .player .vp-player-layout, .player .vp-resize-iframe, .player .vp-target {
+.player .iframe .player-alert .close, .player .vp-player-layout, .player .vp-resize-iframe, .player .vp-target er{
     position: initial;
     top:0;
     left:0;

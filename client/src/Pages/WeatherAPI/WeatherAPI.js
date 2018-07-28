@@ -2,7 +2,7 @@ import React from "react";
 import "./WeatherAPI.css";
 import axios from "axios";
 import { Input } from "../../Components/Form";
-import { Button } from "react-bootstrap";
+import { FormBtn } from "../../Components/Form";
 
 
 class WeatherAPI extends React.Component {
@@ -61,7 +61,7 @@ class WeatherAPI extends React.Component {
       <div className="weather-div">
         <form className="weather-form" onSubmit={this.handleSubmit}>
         <Input className="search-bar" value={this.state.city} name="city" type="text" onChange={this.handleChange} placeholder="  Search a city!" />
-        <Button className="search-button-weather" type="submit" value="Submit">Submit</Button>
+        <FormBtn className="search-button-weather" type="submit" value="Submit">Submit</FormBtn>
         </form>
         <h4 className="city-chosen">{this.state.cityChosen}</h4>
         <br></br>
