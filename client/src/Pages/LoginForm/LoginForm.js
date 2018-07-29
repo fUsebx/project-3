@@ -6,6 +6,8 @@ import { Link } from "react-router-dom";
 
 class LoginForm extends React.Component {
   state = {
+    firstName:"",
+    email: "", 
     username: "",
     password: ""
   };
@@ -21,16 +23,19 @@ class LoginForm extends React.Component {
 
   handleFormSubmit = event => {
     event.preventDefault();
-    if (!this.state.username || !this.state.password) {
-      alert("YOU MUST FILL OUT A USERNAME AND PASSWORD");
-    } else if (this.state.password.length < 6) {
-      alert("PASSWORD MUST BE LONGER");
+    if (!this.state.username && !this.state.password){
+
     } else {
-      API.saveUser({
-        username: this.state.username,
-        password: this.state.password
+      API.getUser(
+         "5b4bab7b89d9491405c70407"
+      )
+      .then(res => {
+      const firstName = res.data.firstName; 
+      const email = res.data.email; 
+      const username = res.data.username; 
+      const password = res.data.password; 
+      console.log(firstName, email, username, password)
       })
-        .then(res => this.loadUsers())
         .catch(err => console.log(err));
     }
 
@@ -40,11 +45,8 @@ class LoginForm extends React.Component {
     });
   };
 
-  loadUsers = () => {
-    API.getUsers()
-      .then(res => this.setState({ username: "", password: "" }))
-      .catch(err => console.log(err));
-  };
+
+
   render() { 
     return (
       <div className="container-fluid login-form">

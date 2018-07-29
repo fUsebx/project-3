@@ -1,21 +1,54 @@
-.test{
-    width: 600px; 
-    height: 250px;
-    background-color: orangered; 
-    display: flex; 
-    flex-direction: row; 
-
+.reddit-display {
+    width: 100%;
+    height: 100%;
+    background-color: #36515a;
+    border-radius: 15px;
+    padding: 10px;
+    box-shadow: 4px 8px 12px #190a31;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
 }
 
-.reddit-title{
-    font-size: 12px; 
+.reddit-header {
+    color: #FAEBD8;
+    font-weight: 300;
+    font-size: 30px;
+}
+
+.reddit-div {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.reddit-threads {
+    margin-bottom: 15px;
+    background:rgba(66, 92, 115, .5);
+    border-radius: 15px;
+}
+
+.reddit-title {
+    font-size: 12px;
 }
 
 .reddit-url {
-    font-size: 10px; 
+    font-size: 10px;
+    padding-left: 15px;
+    color: white;
+    font-weight: 200;
 }
 
 .reddit-thumbnail{
-    width: 50px; 
-    height: 50px;
+    width: 100px;
+    height: 100px;
+    margin: 5px;
+       /*  padding-left: 10px;
+    padding-top: 5px; */
+    border-radius:15%;
+    -webkit-border-radius:15%;
+    -moz-border-radius:15%;
+    -ms-border-radius:15%;
+    -o-border-radius:15%;
+    box-shadow: 2px 4px 8px #190a31;
 }

@@ -4,6 +4,14 @@ import axios from "axios";
 import { Input } from "../../Components/Form";
 import { FormBtn } from "../../Components/Form";
 
+//Assets
+// import ThunderStormIcon from './assets/weather_icons/01W.svg';
+// import RainIcon from './assets/weather_icons/02W.svg';
+// import SnowIcon from './assets/weather_icons/03W.svg';
+// import ClearIcon from './assets/weather_icons/04W-DAY.svg';
+// import CloudsIcon from './assets/weather_icons/05W.svg';
+// import NoLocationFound from './assets/no-location.svg';
+// import LoadingIcon from './assets/loading.svg';
 
 class WeatherAPI extends React.Component {
   constructor(props) {
@@ -13,7 +21,7 @@ class WeatherAPI extends React.Component {
       temp: "",
       description: "", 
       cityChosen: "",
-      cloud: ""
+      weatherIcon: ""
     };
     this.handleChange = this.handleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
@@ -22,7 +30,7 @@ class WeatherAPI extends React.Component {
 
   searchCityForWeather() {
     axios
-      .get("http://api.openweathermap.org/data/2.5/weather", {
+      .get("https://api.openweathermap.org/data/2.5/weather", {
         params: {
           q: `${this.state.city}`,
           APPID: "566e57c98908bd4ea7fa97148977fc32",
@@ -33,7 +41,7 @@ class WeatherAPI extends React.Component {
       .then(response => {
         const { data } = response;
         console.log(data);
-        this.setState({ cityChosen: data.name, temp: data.main.temp, description: data.weather[0].description });
+        this.setState({ cityChosen: data.name, temp: data.main.temp, description: data.weather[0].description, weatherIcon: data.weather[0].id });
       });
   }
 
@@ -41,6 +49,20 @@ class WeatherAPI extends React.Component {
     let value = event.target.value;
     console.log(value);
     this.setState({ city: value });
+
+    // let weatherId = data.data.weather[0].id;
+    // if(weatherId <= 232) {
+    //      this.setState({ weatherIcon: ThunderStormIcon })
+    // } else if(weatherId >= 300 && weatherId <= 531) {
+    //      this.setState({ weatherIcon: RainIcon });
+    // } else if(weatherId >= 600 && weatherId <= 622 ) {
+    //      this.setState({ weatherIcon: SnowIcon });
+    // } else if(weatherId === 800) {
+    //      this.setState({ weatherIcon: ClearIcon });
+    // } else if(weatherId >= 801 && weatherId <= 804) {
+    //      this.setState({ weatherIcon: CloudsIcon });
+    // }
+
   }
 
   handleSubmit(event) {
@@ -55,10 +77,15 @@ class WeatherAPI extends React.Component {
       this.setState({city: ""})
     }
   }
+<<<<<<< HEAD
   
+=======
+
+>>>>>>> 4606350a2de592ba2648bd28eb78d414664dc608
   render() {
     return (
       <div className="weather-div">
+      <h1 className="text-center weather-header">Check the Weather for Today</h1>
         <form className="weather-form" onSubmit={this.handleSubmit}>
         <Input className="search-bar" value={this.state.city} name="city" type="text" onChange={this.handleChange} placeholder="  Search a city!" />
         <FormBtn className="search-button-weather" type="submit" value="Submit">Submit</FormBtn>
@@ -69,7 +96,7 @@ class WeatherAPI extends React.Component {
         <br></br>
         <p className="description">{this.state.description}</p>
         <br></br>
-        <p className="cloud">{this.state.cloud}</p>
+        <p className="weather-icon">{this.state.weatherIcon}</p>
       </div>
     );
   }

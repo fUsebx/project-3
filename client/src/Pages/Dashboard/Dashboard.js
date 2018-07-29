@@ -2,9 +2,9 @@ import React from "react";
 import "./Dashboard.css";
 import DashboardLayout from "../../Components/DashboardLayout";
 import WeatherAPI from "../WeatherAPI";
-import RedditScrape from '../RedditScrape';
+import RedditScrape from "../RedditScrape";
 import ToDoList from "../ToDoList";
-import NewsAPI from '../NewsAPI';
+import NewsAPI from "../NewsAPI";
 
 const Dashboard = () => (
   <DashboardLayout>
@@ -16,18 +16,18 @@ const Dashboard = () => (
       </div>
       <br />
       <div className="row">
-        <div className="col-md-6">
+        <div className="col-md-6 test-column">
           <ToDoList />
         </div>
-        <div className="col-md-6">
-            <RedditScrape />
+        <div className="col-md-6 test-column">
+          <RedditScrape />
         </div>
       </div>
       <br />
       <div className="row">
-      <div className="col-md-4">
-      <NewsAPI />
-      </div>
+        <div className="col-md-6">
+          <NewsAPI />
+        </div>
       </div>
     </div>
   </DashboardLayout>
