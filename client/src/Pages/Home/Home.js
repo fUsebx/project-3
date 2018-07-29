@@ -9,7 +9,7 @@ class Vid extends React.Component {
 
         this.state = {
             videoURL: "https://player.vimeo.com/video/88010511?autoplay=1&loop=1?muted=1"
-        }
+        };
     }
 
     render () {
@@ -17,9 +17,10 @@ class Vid extends React.Component {
         <div className="container-fluid">
             {/* <div className="Home-container" */}
                 <img className="img img-welcome" src={require("../../assets/welcome_copy.png")} alt="welcome"/>
+                <div class="responsive-video">
                     <iframe margin="0" padding="0" background="transparent" id="background-video" src={this.state.videoURL} title="Home video" frameBorder="0"/>
-          </div>
-        // </div>
+                </div>
+        </div>
         )
     }
   }

@@ -3,10 +3,11 @@
     font-family: 'Lato', sans-serif;   
 } */
 
-.container {
-    width:100vh; 
-    height:100vh;
-    padding: none;
+.container-fluid {
+    width:100%;
+    height:100%;
+    padding: 0px;
+    left:0;
 }
 
 #background-video{
@@ -18,12 +19,22 @@
 
 }
 
-.player .iframe .player-alert .close, .player .vp-player-layout, .player .vp-resize-iframe, .player .vp-target {
-    position: initial;
+.player, .iframe, .player-alert, .close, .vp-player-layout, .vp-resize-iframe, .vp-target {
+    position: absolute;
     top:0;
     left:0;
     right:0;
     bottom:0;
-    width:100vh; 
-    height:100vh;
+
+    /* width:100vh;
+    height:100vh; */
+}
+
+.responsive-video,{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -999;
 }
