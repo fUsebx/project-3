@@ -31,7 +31,7 @@ class NewsAPI extends Component {
         {articles.map(article => (
           <div className="articles-div">
           <div className="article-wells">
-           
+
             <a className="news-title" href={article.url} target="_blank">{article.title}</a>
             <h2 className="news-source">News Source: {article.source.name}</h2>
             <img

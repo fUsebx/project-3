@@ -12,14 +12,15 @@
 }
 
 .news-title{
-    font-size: 10px; 
-    color: black; 
+    font-size: 12px; 
+    color: #FAEBD8; 
+    font-weight: 300;
 
 }
 
 .news-source{
-    font-size: 8px; 
-    color: black; 
+    font-size: 10px;
+    color: #190a31;
 }
 
 .news-img{
@@ -29,4 +30,5 @@
     -moz-border-radius: 15%;
     -ms-border-radius: 15%;
     -o-border-radius: 15%;
+    box-shadow: 2px 4px 8px #190a31;
 }
