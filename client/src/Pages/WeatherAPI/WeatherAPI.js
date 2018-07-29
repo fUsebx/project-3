@@ -23,7 +23,6 @@ class WeatherAPI extends React.Component {
       cityChosen: "",
       weatherIcon: ""
     };
-
     this.handleChange = this.handleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
     this.searchCityForWeather = this.searchCityForWeather.bind(this);
@@ -78,7 +77,11 @@ class WeatherAPI extends React.Component {
       this.setState({city: ""})
     }
   }
+<<<<<<< HEAD
+  
+=======
 
+>>>>>>> 4606350a2de592ba2648bd28eb78d414664dc608
   render() {
     return (
       <div className="weather-div">
@@ -98,4 +101,5 @@ class WeatherAPI extends React.Component {
     );
   }
 }
+
 export default WeatherAPI;
