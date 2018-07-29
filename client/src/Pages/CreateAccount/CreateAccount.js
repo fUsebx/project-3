@@ -2,6 +2,9 @@ import React from "react";
 import "./CreateAccount.css";
 import API from "../../utils/API";
 import { Input, FormBtn } from "../../Components/Form";
+import Cookies from "universal-cookie";
+
+const cookies = new Cookies();
 
 class CreateAccount extends React.Component {
   state = {
@@ -10,7 +13,6 @@ class CreateAccount extends React.Component {
     username: "",
     password: ""
   };
-
   handleInputChange = event => {
     let value = event.target.value;
     const name = event.target.name;
@@ -19,32 +21,37 @@ class CreateAccount extends React.Component {
       [name]: value
     });
   };
-
   handleFormSubmit = event => {
     event.preventDefault();
+
     if (!this.state.username || !this.state.password || !this.state.firstName) {
-      alert("YOU MUST FILL OUT A USERNAME AND PASSWORD");
-    } else if (this.state.password.length < 6) {
-      alert("PASSWORD MUST BE LONGER");
+      console.log("must fill in message");
+    } else if (this.state.password.length < 4) {
+      console.log("must be greater than 4");
     } else {
-      API.saveUser({
-        firstName: this.state.firstName,
-        email: this.state.email,
-        username: this.state.username,
-        password: this.state.password
-      })
-        .then("Sucess")
-        .catch(err => console.log(err));
+      const enteredUsername = this.state.username;
+      API.getUsers().then(res => {
+        const userArray = res.data.map(user => {
+          return user.username;
+        });
+        if (userArray.indexOf(enteredUsername) > -1) {
+          window.location = "/error-username";
+        } else {
+          cookies.set("username", this.state.username, { path: "/profile" });
+          cookies.set("firstName", this.state.firstName, { path: "/profile" });
+          cookies.set("email", this.state.email, { path: "/profile" });
+          API.saveUser({
+                firstName: this.state.firstName,
+                email: this.state.email,
+                username: this.state.username,
+                password: this.state.password
+          })
+          .then(window.location = '/dashboard')
+          .catch(err => console.log(err)); 
+        }
+      });
     }
-
-    this.setState({
-      firstName: "",
-      email: "",
-      username: "",
-      password: ""
-    });
   };
-
   render() {
     return (
       <div className="container-fluid create-form">

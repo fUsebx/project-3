@@ -10,7 +10,7 @@ class RedditScrape extends React.Component {
     };
   }
 
-  componentDidMount() {
+  componentDidMount() { 
     axios
       .get(
         "https://cors-anywhere.herokuapp.com/https://www.reddit.com/top/.json"

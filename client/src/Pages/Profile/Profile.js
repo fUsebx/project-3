@@ -1,6 +1,8 @@
 import React from "react";
 import "./Profile.css";
-//import API from "../../utils/API";
+// import Cookies from "universal-cookie";
+
+// const cookies = new Cookies();
 
 class Profile extends React.Component {
   state = {
@@ -10,14 +12,38 @@ class Profile extends React.Component {
     password: ""
   };
 
-  // loadUser = () => {
-  //   API.getUsers(res)
-  //     .then(
-  //       console.log(res)
-  //     )
-  //     .catch(err => console.log(err));
+  // componentDidMount() {
+  //   this.loadUserInformation();
+  // }
+
+  // loadUserInformation = () => {
+  //   const userName = cookies.get("username");
+
+  //     if (userArray.indexOf(userName) > -1) {
+  //       console.log("no user exists")
+  //     } else {
+  //         console.log("user in system")
+  //       API.saveUser({
+  //             firstName: this.state.firstName,
+  //             email: this.state.email,
+  //             username: this.state.username,
+  //             password: this.state.password
+  //       })
+  //       .then(window.location = '/dashboard')
+  //       .catch(err => console.log(err)); 
+  //     }
+  //   });
+
+
+
+  //   this.setState({
+  //     username: userName,
+  //     password: passWord,
+  //     firstName: name,
+  //     email: eMail
+  //   });
   // };
-  
+
   render() {
     return (
       <div className="container-fluid profile-page">
@@ -25,7 +51,7 @@ class Profile extends React.Component {
           <div className="col-md col-centered ">
             <div className="profile-div">
               <div className="profile-header">
-                <h1>Welcome, John Doe</h1>
+                <h1>Welcome, {this.state.firstName}</h1>
               </div>
               <div className="center-image">
                 <i className="fas fa-user fa-10x profile-image" />
@@ -33,9 +59,9 @@ class Profile extends React.Component {
               <div className="well profile-info">
                 <br />
                 <div className="profile-input">
-                  <p>First Name: </p>
-                  <p>Username: </p>
-                  <p>Email: </p>
+                  <p>First Name: {this.state.firstName} </p>
+                  <p>Username: {this.state.username}</p>
+                  <p>Email: {this.state.email} </p>
                 </div>
               </div>
             </div>

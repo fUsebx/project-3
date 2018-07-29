@@ -18,12 +18,13 @@ class NewsAPI extends Component {
       .then(response => {
         const raw = response.data.articles;
         this.setState({ articles: raw.slice(5) });
+        console.log(this.state.articles)
       });
   }
 
   render() {
     const { articles } = this.state;
-    console.log(articles);
+    //console.log(articles);
     return (
       <div className="news-display">
               <h1 className="news-header">Today's Top News</h1>

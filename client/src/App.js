@@ -12,8 +12,8 @@ import LoginForm from "./Pages/LoginForm";
 import NavBar from "./Components/Navbar";
 import Profile from "./Pages/Profile";
 
-
 import "./index.css";
+import ErrorUsername from "./Pages/Error/ErrorUsername";
 
 const App = () => (
   <Router>
@@ -29,6 +29,7 @@ const App = () => (
         <Route exact path="/create_account" component={CreateAccount} />
         <Route exact path="/profile" component={Profile} />
         <Route exact path="/contact" component={ContactForm} />
+        <Route exact path="/error-username" component={ErrorUsername}/>
       </Switch>
       <Footer />
     </div>
