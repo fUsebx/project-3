@@ -29,7 +29,8 @@
 }
 
 .reddit-title {
-    font-size: 12px; 
+    font-size: 12px;
+    left: 0;
 }
 
 .reddit-url {
@@ -40,9 +41,15 @@
 }
 
 .reddit-thumbnail{
-    width: 100px; 
+    width: 100px;
     height: 100px;
     margin: 5px;
     padding-left: 10px;
     padding-top: 5px;
+    border-radius:25%;
+    225%-webkit-border-radius:;
+    -moz-border-radius:25%;
+    -ms-border-radius:25%;
+    -o-border-radius:25%;
+    -webkit-border-radius:25%;
 }
