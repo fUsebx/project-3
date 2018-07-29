@@ -16,7 +16,7 @@ class Vid extends React.Component {
         return (
         <div className="container-fluid">
             <div className="product-holder">
-                    <iframe margin="0" padding="0" background="transparent" id="background-video" src={this.state.videoURL} title="Home video" frameBorder="0"/>
+                <iframe margin="0" padding="0" background="transparent" id="background-video" src={this.state.videoURL} title="Home video" frameBorder="0"/>
                 <img className="img img-responsive" src={require("../../assets/welcome_copy.png")} alt=""/>
             </div>
         </div>
