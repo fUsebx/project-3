@@ -29,20 +29,26 @@
 }
 
 .reddit-title {
-    font-size: 12px; 
+    font-size: 12px;
 }
 
 .reddit-url {
-    font-size: 10px; 
+    font-size: 10px;
     padding-left: 15px;
     color: white;
     font-weight: 200;
 }
 
 .reddit-thumbnail{
-    width: 100px; 
+    width: 100px;
     height: 100px;
     margin: 5px;
-    padding-left: 10px;
-    padding-top: 5px;
+       /*  padding-left: 10px;
+    padding-top: 5px; */
+    border-radius:15%;
+    -webkit-border-radius:15%;
+    -moz-border-radius:15%;
+    -ms-border-radius:15%;
+    -o-border-radius:15%;
+    box-shadow: 2px 4px 8px #190a31;
 }
