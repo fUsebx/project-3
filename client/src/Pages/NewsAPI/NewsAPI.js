@@ -6,7 +6,7 @@ class NewsAPI extends Component {
   constructor() {
     super();
     this.state = {
-      articles: []
+      articles: [] 
     };
   }
 
@@ -24,7 +24,7 @@ class NewsAPI extends Component {
 
   render() {
     const { articles } = this.state;
-    //console.log(articles);
+    
     return (
       <div className="news-display">
               <h1 className="news-header">Today's Top News</h1>

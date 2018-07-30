@@ -20,10 +20,6 @@ class RedditScrape extends React.Component {
         // Each data object, is accessed by the data property on that object
         const raw = response.data.data.children.slice(20);
         this.setState({ articles: raw });
-<<<<<<< HEAD
-=======
-
->>>>>>> 4606350a2de592ba2648bd28eb78d414664dc608
         console.log("Reddit data:", raw);
       });
   }
@@ -31,13 +27,9 @@ class RedditScrape extends React.Component {
   render() {
     const { articles } = this.state;
     return (
-<<<<<<< HEAD
-      <div className="test">
-=======
       <div className="reddit-display">
         <h1 className="reddit-header">Top 5 Reddit Threads...NOW</h1>
         <br />
->>>>>>> 4606350a2de592ba2648bd28eb78d414664dc608
         {articles.map(article => (
           <div className="reddit-div">
             <div className="reddit-threads">

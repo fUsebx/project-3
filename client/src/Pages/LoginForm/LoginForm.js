@@ -28,33 +28,18 @@ class LoginForm extends React.Component {
     if (!this.state.username && !this.state.password) {
       console.log("enter something first");
     } else {
-      cookies.set("username", this.state.username);
-      cookies.set("password", this.state.password);
-
       const enteredUsername = this.state.username;
-      const enteredPassword = this.state.password;
-
-      API.getUsers()
+      const enteredPassword = this.state.password; 
+      API.getUser(enteredUsername)
         .then(res => {
-          const raw = res.data;
-          
-          raw.map(user => {
-            const databaseUsers = user.username;
-            const databasePasswords = user.password;
+          const password = res.data.password;
+          cookies.set("username", enteredUsername, {path: '/'})
+          if (password === enteredPassword) {
+            window.location = '/profile';
+          } else {
+            console.log("incorrect password idiot")
+          }
 
-            if (
-              enteredUsername === databaseUsers && enteredPassword === databasePasswords
-            ) {
-             
-              cookies.set("firstName", user.firstName, { path: '/profile' })
-              cookies.set("email", user.email, { path: '/profile' })
-              cookies.set("username", user.username, { path: '/profile' })
-              window.location = "/dashboard";
-            } else {
-              console.log("fail")
-            }
-            return user;
-          });
         })
         .catch(err => console.log(err));
     }

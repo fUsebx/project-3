@@ -28,15 +28,19 @@
   color: white;
 }
 
-.footer-btn {
+.footer-btn button {
   position: relative;
   float: right;
   margin-top: 10px;
   margin-right: 20px;
+
 }
 
-.footer-btn a {
+.footer-btn-link {
   color: #190a31;
   font-family: 'Lato', sans-serif;
   font-weight: 300;
+  background: transparent; 
 }
+
+

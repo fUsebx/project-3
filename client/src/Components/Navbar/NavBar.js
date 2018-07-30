@@ -5,8 +5,8 @@ import "./NavBar.css";
 export default () => (
   <nav className="navbar navbar-expand-lg navbar-light">
 
-  <a className="navbar-brand">
-  <Link to="/home"><img className="img img-logo" src={require("./assets/logo.png")} alt="logo"/></Link></a>
+  
+  <Link to="/home"><img className="img img-logo" src={require("./assets/logo.png")} alt="logo"/></Link>
 
   <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
     <span className="navbar-toggler-icon"></span>

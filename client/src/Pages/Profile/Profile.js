@@ -1,8 +1,10 @@
 import React from "react";
 import "./Profile.css";
-// import Cookies from "universal-cookie";
+import Cookies from "universal-cookie";
+import API from '../../utils/API'
 
-// const cookies = new Cookies();
+
+const cookies = new Cookies();
 
 class Profile extends React.Component {
   state = {
@@ -12,37 +14,26 @@ class Profile extends React.Component {
     password: ""
   };
 
-  // componentDidMount() {
-  //   this.loadUserInformation();
-  // }
+  componentDidMount() {
+    this.loadUserInformation();
+  }
 
-  // loadUserInformation = () => {
-  //   const userName = cookies.get("username");
-
-  //     if (userArray.indexOf(userName) > -1) {
-  //       console.log("no user exists")
-  //     } else {
-  //         console.log("user in system")
-  //       API.saveUser({
-  //             firstName: this.state.firstName,
-  //             email: this.state.email,
-  //             username: this.state.username,
-  //             password: this.state.password
-  //       })
-  //       .then(window.location = '/dashboard')
-  //       .catch(err => console.log(err)); 
-  //     }
-  //   });
-
-
-
-  //   this.setState({
-  //     username: userName,
-  //     password: passWord,
-  //     firstName: name,
-  //     email: eMail
-  //   });
-  // };
+  loadUserInformation = () => {
+    let userName = cookies.get("username");
+    
+    
+    API.getUser(userName)
+      .then().then(res => {
+       const userzName = res.data.username
+       const first = res.data.firstName; 
+       const emailAddress = res.data.email;
+       this.setState({
+         username: userzName,
+         firstName: first, 
+         email: emailAddress
+       })
+      })
+  }
 
   render() {
     return (

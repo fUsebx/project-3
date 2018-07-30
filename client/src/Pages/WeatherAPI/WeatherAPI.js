@@ -77,11 +77,6 @@ class WeatherAPI extends React.Component {
       this.setState({city: ""})
     }
   }
-<<<<<<< HEAD
-  
-=======
-
->>>>>>> 4606350a2de592ba2648bd28eb78d414664dc608
   render() {
     return (
       <div className="weather-div">

@@ -5,6 +5,7 @@ import WeatherAPI from "../WeatherAPI";
 import RedditScrape from "../RedditScrape";
 import ToDoList from "../ToDoList";
 import NewsAPI from "../NewsAPI";
+import HistoryAPI from "../HistoryAPI";
 
 const Dashboard = () => (
   <DashboardLayout>
@@ -29,6 +30,7 @@ const Dashboard = () => (
           <NewsAPI />
         </div>
       </div>
+      <HistoryAPI />
     </div>
   </DashboardLayout>
 );

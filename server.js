@@ -16,9 +16,16 @@ if (process.env.NODE_ENV === "production") {
 
 app.use(routes);
 
+
 mongoose.connect(
-  process.env.MONGODB_URI || "mongodb://localhost/fuzeboxDB",
+  process.env.MONGODB_URI || "mongodb://localhost/fuseboxDB",
+  console.log("Connected to Mongoose") 
 );
+
+app.get('*', function (req, res) {
+  const index = path.join(__dirname, 'build', 'index.html');
+  res.sendFile(index);
+});
 
 app.listen(PORT, () =>
   console.log(`🌎  ==> API Server now listening on PORT ${PORT}!`)

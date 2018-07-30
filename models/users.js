@@ -1,11 +1,13 @@
 const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 
+
 const userSchema = new Schema({
+  
   firstName: {
     type: String, 
     trim: true, 
-    required: true
+    required: true,
   },
   email: {
     type: String,
@@ -23,7 +25,7 @@ const userSchema = new Schema({
     required: "Password is Required",
     validate: [
       function(input) {
-        return input.length >= 6;
+        return input.length >= 5;
       },
       "Password should be longer than 5 characters"
     ]
@@ -35,6 +37,6 @@ const userSchema = new Schema({
   }
 });
 
-const Users = mongoose.model("Users", userSchema);
+const Users = mongoose.model("users", userSchema);
 
 module.exports = Users;

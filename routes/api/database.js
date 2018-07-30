@@ -5,9 +5,10 @@ router.route('/')
     .get(databaseController.findAll)
     .post(databaseController.create)
 
+
     router.route("/:id")
-    .get(databaseController.findById)
-    .put(databaseController.update)
+    .get(databaseController.findOneUser)
+    .put(databaseController.find)
     .delete(databaseController.remove);
     
 module.exports = router; 

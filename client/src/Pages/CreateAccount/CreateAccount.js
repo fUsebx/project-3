@@ -37,17 +37,23 @@ class CreateAccount extends React.Component {
         if (userArray.indexOf(enteredUsername) > -1) {
           window.location = "/error-username";
         } else {
-          cookies.set("username", this.state.username, { path: "/profile" });
-          cookies.set("firstName", this.state.firstName, { path: "/profile" });
-          cookies.set("email", this.state.email, { path: "/profile" });
+          cookies.set("username", this.state.username, { path: '/' });
           API.saveUser({
-                firstName: this.state.firstName,
-                email: this.state.email,
-                username: this.state.username,
-                password: this.state.password
+            firstName: this.state.firstName,
+            email: this.state.email,
+            username: this.state.username,
+            password: this.state.password
           })
-          .then(window.location = '/dashboard')
-          .catch(err => console.log(err)); 
+            .then(window.location = '/profile')
+            .catch(err => console.log(err))
+
+          this.setState({
+            firstName: "",
+            email: "",
+            username: "",
+            password: ""
+          })
+
         }
       });
     }
