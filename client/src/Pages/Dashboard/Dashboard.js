@@ -21,7 +21,7 @@ const Dashboard = () => (
           <ToDoList />
         </div>
         <div className="col-md-6 test-column">
-          <RedditScrape />
+        <HistoryAPI />
         </div>
       </div>
       <br />
@@ -29,8 +29,10 @@ const Dashboard = () => (
         <div className="col-md-6">
           <NewsAPI />
         </div>
+        <div className="col-md-6">
+        <RedditScrape />
+        </div>
       </div>
-      <HistoryAPI />
     </div>
   </DashboardLayout>
 );
