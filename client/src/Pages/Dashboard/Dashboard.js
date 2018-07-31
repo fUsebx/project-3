@@ -36,10 +36,6 @@ const Dashboard = () => (
         <RedditScrape />
         </div>
       </div>
-<<<<<<< HEAD
-      
-=======
->>>>>>> 7fa9e1bc15ecbb7a2715ce67a77cc5b100054d6a
     </div>
   </DashboardLayout>
 );
