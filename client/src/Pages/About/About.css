@@ -8,13 +8,17 @@
 .about-contain {
     background-image: url("https://media1.tenor.com/images/b8319e1ee8daa2da21b7633a7b8c8693/tenor.gif?itemid=5408450");
     background-size: cover;
+    background-position: center;
     height:100%;
     width:100%;
+    margin-top: -30px;
 }
 
 .test-about {
     color: white;
     font-family: 'Lato', sans-serif;
+    height:90vmax;
+    width: 100vmax;
 }
 
 h1 {
