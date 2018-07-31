@@ -11,10 +11,10 @@ const Dashboard = () => (
   <DashboardLayout>
     <div className="container-fluid">
       <div className="row">
-        <div className="col-md-6">
+        <div className="col-md-6 test-column">
           <WeatherAPI />
         </div>
-        <div className="col-md-6">
+        <div className="col-md-6 test-column">
         <HistoryAPI />
         </div>
       </div>
@@ -24,22 +24,19 @@ const Dashboard = () => (
           <ToDoList />
         </div>
         <div className="col-md-6 test-column">
-        <HistoryAPI />
+          <ToDoList />
+          {/* new widget here */}
         </div>
       </div>
       <br />
       <div className="row">
-        <div className="col-md-6">
+        <div className="col-md-6 test-column">
           <NewsAPI />
         </div>
-        <div className="col-md-6">
+        <div className="col-md-6 test-column">
         <RedditScrape />
         </div>
       </div>
-<<<<<<< HEAD
-      
-=======
->>>>>>> 7fa9e1bc15ecbb7a2715ce67a77cc5b100054d6a
     </div>
   </DashboardLayout>
 );

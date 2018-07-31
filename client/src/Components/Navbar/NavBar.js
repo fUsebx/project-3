@@ -54,7 +54,7 @@ export default () => (
       </li>      
       
       <li className="nav-item">
-      <Link onClick={clickHandle} className="btn-nav" to="/login">Sign Out</Link>
+      <Link onClick={clickHandle} className="btn-nav" to="/home">Sign Out</Link>
       </li>
 
     </ul>
