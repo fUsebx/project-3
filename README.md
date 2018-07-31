@@ -1,4 +1,6 @@
-# fUsebx
+# fUsebx 
+[See Deployed Project!](https://nw-bootcamp-project3.herokuapp.com/)
+
 Project #3 by Merge Conflict
 
 fUsebx is an application built using the MERN stack. The app centralizes users' social media accounts
