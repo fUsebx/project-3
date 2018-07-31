@@ -37,7 +37,7 @@ const Dashboard = () => (
         <RedditScrape />
         </div>
       </div>
-    </div>
+     </div>
   </DashboardLayout>
 );
 

@@ -1,7 +1,6 @@
 import React from "react";
 import "./WeatherAPI.css";
 import "./assets/css/weather-icons.css";
-import "./assets/font/weathericons-regular-webfont.svg"
 import axios from "axios";
 import { Input } from "../../Components/Form";
 import { FormBtn } from "../../Components/Form";
