@@ -2,7 +2,7 @@
   min-height: 50px;
   min-width: 100%;
   background: #AFB2C4;
-  opacity: .8;
+  opacity: 1;
   position: fixed;
   left: 0;
   bottom: 0;
@@ -18,17 +18,21 @@
   margin-left: 20px;
 }
 
-.team-name a {
+.merge-conflict {
   color: rgb(84, 39, 78);
   font-family: 'Lato', sans-serif;
   font-weight: 300;
+}
+
+.team-name:hover p {
+  color: white;
 }
 
 .team-name:hover {
   color: white;
 }
 
-.footer-btn button {
+.footer-btn {
   position: relative;
   float: right;
   margin-top: 10px;
@@ -41,6 +45,10 @@
   font-family: 'Lato', sans-serif;
   font-weight: 300;
   background: transparent; 
+}
+
+.footer-btn-link:hover {
+  color: white;
 }
 
 

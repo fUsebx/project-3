@@ -58,7 +58,7 @@ class ContactForm extends Component {
           onSubmit={this.handleSubmit.bind(this)}
           method="POST"
         >
-        <h4 className="contact-h4 text-center">Send a message to the fUseBx team</h4>
+        <h4 className="contact-h4 text-center">Send a message to the fUsebx team</h4>
             <br />
           <div className="form-group">
             <label className="contact-form-label" for="name">Name</label>

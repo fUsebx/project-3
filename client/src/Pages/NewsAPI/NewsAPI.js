@@ -33,13 +33,14 @@ class NewsAPI extends Component {
           <div className="articles-div">
           <div className="article-wells">
 
-            <a className="news-title" href={article.url} target="_blank">{article.title}</a>
-            <h2 className="news-source">News Source: {article.source.name}</h2>
+            <a className="news-title" href={article.url} target="_blank"><p>{article.title}</p></a>
+            
             <img
-              className="news-img"
+              className="news-img center"
               src={article.urlToImage}
               alt="something here"
             />
+            <a className="news-source text-center"><p>News Source: {article.source.name}</p></a>
           </div>
           </div>
         ))}
