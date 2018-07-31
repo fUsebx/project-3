@@ -19,8 +19,8 @@ class HistoryAPI extends Component {
     let currentMonth = new Date().getMonth() + 1; 
     let currentDay = new Date().getDate(); 
     let url = "https://cors-anywhere.herokuapp.com/http://history.muffinlabs.com/date/" + currentMonth + "/" + currentDay 
-    console.log(currentMonth)
-    console.log(currentDay)
+    //console.log(currentMonth)
+    //console.log(currentDay)
 
 
     axios
@@ -42,7 +42,7 @@ class HistoryAPI extends Component {
   }
 
   render() {
-    console.log(this.state.birth);
+    //console.log(this.state.birth);
     return (
       <div className="history-display">
         <h1 className="history-header">On This Day in History...</h1>

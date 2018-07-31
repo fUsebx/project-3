@@ -20,7 +20,7 @@ class RedditScrape extends React.Component {
         // Each data object, is accessed by the data property on that object
         const raw = response.data.data.children.slice(20);
         this.setState({ articles: raw });
-        console.log("Reddit data:", raw);
+        //console.log("Reddit data:", raw);
       });
   }
 

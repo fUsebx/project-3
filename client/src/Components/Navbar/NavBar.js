@@ -2,21 +2,14 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "./NavBar.css";
 import clickHandle from './assets/clickHandle';
-//import { hideDisplay } from "./assets/hideDisplay";
-//import onLoadHandler from './assets/onLoadHandler'
-//import {hideDisplay} from './assets/hideDisplay'; 
-// import Cookies from 'universal-cookie';
-// let cookie = new Cookies().get('username')
+import Cookies from 'universal-cookie';
+let cookie = new Cookies().get('username')
 
-// const DisplayChoice = (props) => {
-//   if (cookie === undefined) {
-    
-//     return "btn-nav"
-//   } else {
-    
-//     return "hide-btn"
-//   }
-// }
+const DisplayChoice = (props) => {
+  //console.log(props)
+  return props
+}
+
 
 
 export default () => (
@@ -34,27 +27,27 @@ export default () => (
     <ul className="navbar-nav">
       
       <li className="nav-item">
-      <Link  className="btn-nav" to="/about">About</Link>
+      <Link  className={DisplayChoice(cookie) ? 'hide-btn': "btn-nav"} to="/about">About</Link>
       </li>
       
       <li className="nav-item">
-      <Link className="btn-nav" to="/login">Sign In</Link>
-      </li>
-
-      <li className="nav-item">
-      <Link className="btn-nav" to="/create_account">Create Account</Link>
+      <Link  className={DisplayChoice(cookie) ? 'hide-btn': "btn-nav"} to="/login">Sign In</Link>
       </li>
 
       <li className="nav-item">
-      <Link className="btn-nav" to="/profile">Profile</Link>
+      <Link className={DisplayChoice(cookie) ? 'hide-btn': "btn-nav"} to="/create_account">Create Account</Link>
+      </li>
+
+      <li className="nav-item">
+      <Link className={DisplayChoice(cookie) ? 'btn-nav': "hide-btn"} to="/profile">Profile</Link>
       </li>      
       
       <li className="nav-item">
-      <Link className="btn-nav" to="/dashboard">Dashboard</Link>
+      <Link className={DisplayChoice(cookie) ? 'btn-nav': "hide-btn"} to="/dashboard">Dashboard</Link>
       </li>      
       
       <li className="nav-item">
-      <Link onClick={clickHandle} className="btn-nav" to="/login">Sign Out</Link>
+      <Link onClick={clickHandle} className={DisplayChoice(cookie) ? 'btn-nav': "hide-btn"} to="/login">Sign Out</Link>
       </li>
 
     </ul>

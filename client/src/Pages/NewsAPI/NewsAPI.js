@@ -18,7 +18,7 @@ class NewsAPI extends Component {
       .then(response => {
         const raw = response.data.articles;
         this.setState({ articles: raw.slice(5) });
-        console.log(this.state.articles)
+        //console.log(this.state.articles)
       });
   }
 
