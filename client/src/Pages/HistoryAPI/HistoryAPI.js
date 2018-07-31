@@ -12,11 +12,19 @@ class HistoryAPI extends Component {
     };
   }
 
+
+
   componentDidMount() {
+
+    let currentMonth = new Date().getMonth() + 1; 
+    let currentDay = new Date().getDate(); 
+    let url = "https://cors-anywhere.herokuapp.com/http://history.muffinlabs.com/date/" + currentMonth + "/" + currentDay 
+    console.log(currentMonth)
+    console.log(currentDay)
+
+
     axios
-      .get(
-        "https://cors-anywhere.herokuapp.com/http://history.muffinlabs.com/date/2/14"
-      )
+      .get(url)
       .then(response => {
         const births = response.data.data.Births
         const deaths = response.data.data.Deaths

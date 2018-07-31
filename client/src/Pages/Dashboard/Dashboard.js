@@ -11,8 +11,11 @@ const Dashboard = () => (
   <DashboardLayout>
     <div className="container-fluid">
       <div className="row">
-        <div className="col-md-12">
+        <div className="col-md-6">
           <WeatherAPI />
+        </div>
+        <div className="col-md-6">
+        <HistoryAPI />
         </div>
       </div>
       <br />
@@ -30,7 +33,7 @@ const Dashboard = () => (
           <NewsAPI />
         </div>
       </div>
-      <HistoryAPI />
+      
     </div>
   </DashboardLayout>
 );

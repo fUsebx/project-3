@@ -1,9 +1,27 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./NavBar.css";
+import clickHandle from './assets/clickHandle';
+//import { hideDisplay } from "./assets/hideDisplay";
+//import onLoadHandler from './assets/onLoadHandler'
+//import {hideDisplay} from './assets/hideDisplay'; 
+// import Cookies from 'universal-cookie';
+// let cookie = new Cookies().get('username')
+
+// const DisplayChoice = (props) => {
+//   if (cookie === undefined) {
+    
+//     return "btn-nav"
+//   } else {
+    
+//     return "hide-btn"
+//   }
+// }
+
 
 export default () => (
-  <nav className="navbar navbar-expand-lg navbar-light">
+
+  <nav className="navbar navbar-expand-lg navbar-light"> 
 
   
   <Link to="/home"><img className="img img-logo" src={require("./assets/logo.png")} alt="logo"/></Link>
@@ -16,7 +34,7 @@ export default () => (
     <ul className="navbar-nav">
       
       <li className="nav-item">
-      <Link className="btn-nav" to="/about">About</Link>
+      <Link  className="btn-nav" to="/about">About</Link>
       </li>
       
       <li className="nav-item">
@@ -36,7 +54,7 @@ export default () => (
       </li>      
       
       <li className="nav-item">
-      <Link className="btn-nav" to="/login">Sign Out</Link>
+      <Link onClick={clickHandle} className="btn-nav" to="/login">Sign Out</Link>
       </li>
 
     </ul>
