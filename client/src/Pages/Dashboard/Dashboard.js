@@ -6,7 +6,7 @@ import RedditScrape from "../RedditScrape";
 import ToDoList from "../ToDoList";
 import NewsAPI from "../NewsAPI";
 import HistoryAPI from "../HistoryAPI";
-// import YoutubeAPI from '../YoutubeAPI'; 
+import YoutubeAPI from '../YoutubeAPI'; 
 
 const Dashboard = () => (
   <DashboardLayout>
@@ -25,7 +25,7 @@ const Dashboard = () => (
           <ToDoList />
         </div>
         <div className="col-md-6 test-column">
-        {/* <YoutubeAPI /> */}
+        <YoutubeAPI />
         </div>
       </div>
       <br />

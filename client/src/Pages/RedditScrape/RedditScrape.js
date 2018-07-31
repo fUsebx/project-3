@@ -18,7 +18,7 @@ class RedditScrape extends React.Component {
       .then(response => {
         // This is the full array
         // Each data object, is accessed by the data property on that object
-        const raw = response.data.data.children.slice(20);
+        const raw = response.data.data.children.slice(15);
         this.setState({ articles: raw });
         //console.log("Reddit data:", raw);
       });
@@ -28,7 +28,7 @@ class RedditScrape extends React.Component {
     const { articles } = this.state;
     return (
       <div className="reddit-display">
-        <h1 className="reddit-header">Top 5 Reddit Threads...NOW</h1>
+        <h1 className="reddit-header">Top 10 Reddit Threads...NOW</h1>
         <br />
         {articles.map(article => (
           <div className="reddit-divs">

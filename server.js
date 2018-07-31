@@ -4,6 +4,7 @@ const mongoose = require('mongoose');
 const routes = require("./routes");
 const app = express();
 const PORT = process.env.PORT || 3001; 
+require('dotenv').config();
 
 
 
@@ -18,7 +19,8 @@ app.use(routes);
 
 
 mongoose.connect(
-  process.env.MONGODB_URI || "mongodb://localhost/fuseboxDB",
+  
+  process.env.MONGODB_URI || "mongodb://localhost/fuzeboxDB",
   console.log("Connected to Mongoose") 
 );
 

@@ -13,11 +13,11 @@ class NewsAPI extends Component {
   componentDidMount() {
     axios
       .get(
-        "https://newsapi.org/v2/top-headlines?country=us&apiKey=7941c058b4d14a3cbe7fedf92e45c6f0"
+        "https://newsapi.org/v2/top-headlines?country=us&apiKey=322f20b1e7084970951e0ea7c7b9db14"
       )
       .then(response => {
         const raw = response.data.articles;
-        this.setState({ articles: raw.slice(5) });
+        this.setState({ articles: raw.slice(10) });
         //console.log(this.state.articles)
       });
   }
