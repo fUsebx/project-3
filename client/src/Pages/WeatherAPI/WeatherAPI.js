@@ -1,6 +1,6 @@
 import React from "react";
 import "./WeatherAPI.css";
-import "./assets/css/weather-icons.min.css";
+import "./assets/css/weather-icons.css";
 import "./assets/font/weathericons-regular-webfont.svg"
 import axios from "axios";
 import { Input } from "../../Components/Form";
@@ -12,7 +12,7 @@ class WeatherAPI extends React.Component {
     this.state = {
       city: "",
       temp: "",
-      description: "", 
+      description: "",
       cityChosen: "",
       weatherIcon: ""
     };
@@ -34,7 +34,7 @@ class WeatherAPI extends React.Component {
       .then(response => {
         const { data } = response;
         console.log(data);
-        this.setState({ cityChosen: data.name, temp: data.main.temp, description: data.weather[0].description, weatherIcon: data.weather[0].icon });
+        this.setState({ cityChosen: data.name, temp: data.main.temp, description: data.weather[0].description, weathericons: data.weathericons});
       });
   }
 
@@ -49,9 +49,9 @@ class WeatherAPI extends React.Component {
     if (!this.state.city) {
       console.log("You must enter something");
     } else if (this.state.city === undefined) {
-      console.log("This city doesnt exist");
+      console.log("This city does not exist");
     } else {
-      console.log("sucess");
+      console.log("success");
       this.searchCityForWeather();
       this.setState({city: ""})
     }
@@ -68,9 +68,9 @@ class WeatherAPI extends React.Component {
         <br></br>
         <h5 className="temperature">{this.state.temp}</h5>
         <br></br>
-        <p className="description">{this.state.description}</p>
+        <h5 className="description">{this.state.description}</h5>
         <br></br>
-        <p><i id="weatherIcon" className="wi wi-night-sleet"></i>{this.state.weatherIcon}</p>
+        <i className="weathericons">{this.state.weathericons}</i>
       </div>
     );
   }

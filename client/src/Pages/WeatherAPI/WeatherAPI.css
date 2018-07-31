@@ -18,7 +18,7 @@
 }
 
 .search-bar{
-    color: black; 
+    color: black;
     border-radius: 25px;
     width: 100%;
     margin-right: 10px;
@@ -43,6 +43,7 @@
     width: 100%;
     display: flex;
     direction: row;
+    position: center;
 }
 
 .search-button-weather {
@@ -59,11 +60,13 @@
 
 .temperature {
     padding-left: 15px;
+    color: antiquewhite;
 }
 
-.description .cloud {
+.description, .weathericons {
     font-family: "Lato", sans-serif;
-    font-weight: 100;
+    font-weight: 400;
     padding-left: 15px;
-    padding-top: 10px;
+    color: #190a31;
+
 }
