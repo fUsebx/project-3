@@ -1,17 +1,9 @@
 import React from "react";
 import "./WeatherAPI.css";
+import "./assets/css/weather-icons.css";
 import axios from "axios";
 import { Input } from "../../Components/Form";
 import { FormBtn } from "../../Components/Form";
-
-//Assets
-// import ThunderStormIcon from './assets/weather_icons/01W.svg';
-// import RainIcon from './assets/weather_icons/02W.svg';
-// import SnowIcon from './assets/weather_icons/03W.svg';
-// import ClearIcon from './assets/weather_icons/04W-DAY.svg';
-// import CloudsIcon from './assets/weather_icons/05W.svg';
-// import NoLocationFound from './assets/no-location.svg';
-// import LoadingIcon from './assets/loading.svg';
 
 class WeatherAPI extends React.Component {
   constructor(props) {
@@ -19,7 +11,7 @@ class WeatherAPI extends React.Component {
     this.state = {
       city: "",
       temp: "",
-      description: "", 
+      description: "",
       cityChosen: "",
       weatherIcon: ""
     };
@@ -41,7 +33,7 @@ class WeatherAPI extends React.Component {
       .then(response => {
         const { data } = response;
         console.log(data);
-        this.setState({ cityChosen: data.name, temp: data.main.temp, description: data.weather[0].description, weatherIcon: data.weather[0].id });
+        this.setState({ cityChosen: data.name, temp: data.main.temp, description: data.weather[0].description, weathericons: data.weathericons});
       });
   }
 
@@ -49,20 +41,6 @@ class WeatherAPI extends React.Component {
     let value = event.target.value;
     console.log(value);
     this.setState({ city: value });
-
-    // let weatherId = data.data.weather[0].id;
-    // if(weatherId <= 232) {
-    //      this.setState({ weatherIcon: ThunderStormIcon })
-    // } else if(weatherId >= 300 && weatherId <= 531) {
-    //      this.setState({ weatherIcon: RainIcon });
-    // } else if(weatherId >= 600 && weatherId <= 622 ) {
-    //      this.setState({ weatherIcon: SnowIcon });
-    // } else if(weatherId === 800) {
-    //      this.setState({ weatherIcon: ClearIcon });
-    // } else if(weatherId >= 801 && weatherId <= 804) {
-    //      this.setState({ weatherIcon: CloudsIcon });
-    // }
-
   }
 
   handleSubmit(event) {
@@ -70,9 +48,9 @@ class WeatherAPI extends React.Component {
     if (!this.state.city) {
       console.log("You must enter something");
     } else if (this.state.city === undefined) {
-      console.log("This city doesnt exist");
+      console.log("This city does not exist");
     } else {
-      console.log("sucess");
+      console.log("success");
       this.searchCityForWeather();
       this.setState({city: ""})
     }
@@ -89,9 +67,9 @@ class WeatherAPI extends React.Component {
         <br></br>
         <h5 className="temperature">{this.state.temp}</h5>
         <br></br>
-        <p className="description">{this.state.description}</p>
+        <h5 className="description">{this.state.description}</h5>
         <br></br>
-        <p className="weather-icon">{this.state.weatherIcon}</p>
+        <i className="weathericons">{this.state.weathericons}</i>
       </div>
     );
   }

@@ -12,10 +12,10 @@ const Dashboard = () => (
   <DashboardLayout>
     <div className="container-fluid">
       <div className="row">
-        <div className="col-md-6">
+        <div className="col-md-6 test-column">
           <WeatherAPI />
         </div>
-        <div className="col-md-6">
+        <div className="col-md-6 test-column">
         <HistoryAPI />
         </div>
       </div>
@@ -30,14 +30,14 @@ const Dashboard = () => (
       </div>
       <br />
       <div className="row">
-        <div className="col-md-6">
+        <div className="col-md-6 test-column">
           <NewsAPI />
         </div>
-        <div className="col-md-6">
+        <div className="col-md-6 test-column">
         <RedditScrape />
         </div>
       </div>
-    </div>
+     </div>
   </DashboardLayout>
 );
 
