@@ -4,6 +4,7 @@ import DashboardLayout from "../../Components/DashboardLayout";
 import WeatherAPI from '../WeatherAPI'; 
 import RedditScrape from '../RedditScrape'; 
 import ToDoList from '../ToDoList'; 
+import Twitter from '../Twitter'
 // import NewsAPI from '../NewsAPI'; 
 
 const Dashboard = (props) => (
@@ -11,6 +12,7 @@ const Dashboard = (props) => (
                 <WeatherAPI />
                 <ToDoList />
                 <RedditScrape />
+                <Twitter/>
                 {/* <NewsAPI /> */}
             </DashboardLayout>
             
