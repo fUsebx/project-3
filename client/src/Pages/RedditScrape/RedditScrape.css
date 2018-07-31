@@ -51,6 +51,8 @@
     color: #AFB2C4;
     font-weight: 400;
     font-style: italic;
+    margin-left: 15px;
+    margin-right: 15px;
 }
 
 .reddit-article-title:hover {

@@ -34,7 +34,7 @@ class RedditScrape extends React.Component {
           <div className="reddit-divs">
             <div className="row">
             <div className="col-centered reddit-title">
-            <a className="reddit-article-title" href={article.data.url} target="_blank">{article.data.title}</a>{" "}
+            <p className="reddit-article-title" href={article.data.url} target="_blank">{article.data.title}</p>{" "}
             
             </div>
             </div>
